@@ -1,5 +1,6 @@
 div header main section footer { /*Временно добавил красную границу вокруг всех блоков для удобства врестки*/
   border-style: solid;
+  border-width: 1px;
   border-color: red;
 }
 
