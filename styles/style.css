@@ -61,7 +61,7 @@
 .logo {
   width: 183px; /*Ширина блока logo*/
   height: 32px; /*Высота блока logo*/
-  z-index: 1; /*Блок logo должен быть поверх всех блоков*/
+  z-index: 4; /*Блок logo должен быть поверх всех блоков*/
 }
 
 /*Модификатор для блока с логотипом, определяющий его параметры для отображения в header*/
@@ -69,7 +69,79 @@
   position: absolute; /*Установил для бока logo абсолютное позиционирование относительно родительского блока header*/
   top: 30px; /*отступ сверху от header 30px*/
   left: 64px; /*отступ слева от header 64px*/
-  background-image:url(../images/logo_place_header.svg); /*Добавил логотип - logo_place_header.svg*/
+  /*background-image:url(../images/logo_place_header.svg); Добавил логотип - logo_place_header.svg*/
+}
+
+/*Создал дополнительный флекс контейнер и установил ему необходимую ширину и высоту аналогичную блоку header
+Поместил во флекс контейнер заголовк h1 и выровнял его по левому краю и по вериткали по центру*/
+.header__title {
+  width: 730px; /*Ширина блока*/
+  height: 100vh; /*100% высоты окна браузера*/
+  min-height: 600px; /*минимальная высота*/
+  max-height: 756px; /*максимальная высота*/
+  display: flex; /*Определил блок header__title как флекс контейнер*/
+  flex-direction: row; /*задал направление внутри флекс контейнера в ряд слева направо*/
+  z-index: 3; /*Блок должен быть поверх всех блоков кроме logo*/
+}
+
+.header__title-place-left-center {
+  position: absolute; /*Установил для бока абсолютное позиционирование относительно родительского блока header*/
+  left: 64px; /*отступ слева от родительского блока header 64px*/
+  align-items: center; /*Элементы внутри флекс контейнера высторить в ряд вдоль оси по центру блока*/
+}
+
+.header__title-text {
+  line-height: 96px; /*Высота строки*/
+  font-size: 102px; /*Размер шрифта*/
+  font-weight: bold; /*Начертание шрифта полужирное*/
+}
+
+.header__subtitle {
+  position: absolute; /*Установил для бока абсолютное позиционирование относительно родительского блока header*/
+  width: 388px; /*Ширина блока*/
+  left: 64px; /*отступ слева от header 64px*/
+  bottom: 30px; /*отступ снизу от header 30px*/
+  z-index: 4; /*Блок должен быть поверх всех блоков*/
+}
+
+.header__subtitle-text {
+  line-height: 25px; /*Высота строки*/
+  font-size: 18px; /*Размер шрифта*/
+  font-weight: normal; /*Начертание шрифта нормальное*/
+}
+
+.header__subtitle-link {
+  text-decoration: none;
+}
+
+.header__main-illustration {
+  width: 765px; /*Ширина блока*/
+  height: 608px; /*Высота блока*/
+  z-index: 2; /*Блок должен быть ниже logo, title, subtitle*/
+
+}
+
+.header__main-illustration-place-right-bottom {
+  position: absolute; /*Установил для бока абсолютное позиционирование относительно родительского блока header*/
+  right: 0px; /*отступ слева от header*/
+  bottom: 0px; /*отступ снизу от header*/
+}
+
+.header__square-pic {
+  width: 568px; /*Ширина блока*/
+  height: 568px; /*Высота блока*/
+  z-index: 1; /*Блок должен быть ниже logo, title, subtitle, main-illustration*/
+
+}
+
+.header__square-pic-color {
+  background-color: #2f80ed; /*установил синий цвет фона для блока*/
+}
+
+.header__square-pic-place-right-top {
+  position: absolute; /*Установил для бока абсолютное позиционирование относительно родительского блока header*/
+  right: 0px; /*отступ слева от header*/
+  top: 64px; /*отступ снизу от header*/
 }
 
 /* и элемента с модификатором вида ключ-значение */
