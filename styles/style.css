@@ -208,10 +208,82 @@
   text-align: left; /*выравнивание текста по левому краю*/
 }
 
-/* и элемента с модификатором вида ключ-значение */
+/*Селектор для второй секции - Цифры*/
+.digits {
+  display: flex; /*преобразую блок во флекс контейнер*/
+  flex-direction: column; /*задал направление внутри флекс контейнера в ряд сверху вниз*/
+  justify-content: flex-start; /*блок выровнен по центру флекс контейнера по горизонтали*/
+  align-items: center;
+}
+/*Селектор заголовка второй секции - Цифры*/
+.section__title {
+  width: 60%; /*ширина блока 60% от ширины флекс контейнера*/
+  padding-top: 100px; /*внутрений отступ от верхнего края флекс контейнера*/
+}
+
+/*модификатор текста для заголовка второй секции*/
+.section__title-text {
+  line-height: 1.15; /*Высота строки*/
+  font-size: 60px; /*Размер шрифта*/
+  font-weight: bold; /*Начертание шрифта полужирное*/
+  text-align: center; /*выравнивание текста по центру*/
+}
+
+.section__subtitle {
+  width: 60%; /*ширина блока 60% от ширины флекс контейнера*/
+  padding-top: 20px; /*внутрений отступ от верхнего края флекс контейнера*/
+}
+
+.section__subtitle-text {
+  line-height: 34px; /*Высота строки*/
+  font-size: 24px; /*Размер шрифта*/
+  font-weight:normal; /*Начертание шрифта нормальное*/
+  text-align: center; /*выравнивание текста по центру*/
+}
+
+.table {
+  display: flex; /*преобразую блок во флекс контейнер*/
+  flex-direction: row; /*задал направление внутри флекс контейнера в ряд слева направо*/
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  width: 1100px; /*ширина флекс контейнера*/
+  padding-bottom: 100px;
+}
+
+.table__cel {
+  display: flex; /*преобразую блок во флекс контейнер*/
+  flex-direction:column; /*задал направление внутри флекс контейнера в ряд сверху вниз*/
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 250px;
+  padding-top: 60px;
+
+}
+
+.table__heading {
+  line-height: 1.15; /*Высота строки*/
+  font-size: 24px; /*Размер шрифта*/
+  font-weight:bold; /*Начертание шрифта полужирное*/
+  text-align: left; /*выравнивание текста по центру*/
+}
+
+.table__text {
+  line-height: 1.2; /*Высота строки*/
+  font-size: 18px; /*Размер шрифта*/
+  font-weight:normal; /*Начертание шрифта нормальное*/
+  text-align: left; /*выравнивание текста по центру*/
+}
+
+/*модификатор отступа от верхней границы флекс контейнера для блока table__text*/
+.table__text-padding-top {
+  padding-top: 20px;
+}
+
+/* и элемента с модификатором вида ключ-значение
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
-}
+}*/
