@@ -16,7 +16,7 @@
 <body>
   <div class="page">
     <!-- Шапка сайта (большой объем работы) 01.03.2021 -->
-    <header class="header block_color_gray">
+    <header class="header">
 
       <!-- Блок с логотипом Яндекс Практикум -->
       <a class="logo logo_place_header" href="https://praktikum.yandex.ru/" target="_blank">
@@ -24,270 +24,262 @@
       </a>
 
       <!-- Главная илюстрация блока header-->
-      <img src="./images/header-image.png" class = "header__main-illustration header__main-illustration-place-right-bottom" alt="Мальчик потупил взгляд вниз, так как получил двойку, его радостьно встречает собака,
+      <img src="./images/header-image.png" class = "header__main-illustration" alt="Мальчик потупил взгляд вниз, так как получил двойку, его радостьно встречает собака,
         вопрошающе смотрит мать и младший брат"
       >
 
       <!-- Синий квадрат за главной илюстрацией-->
-      <div class="header__square-pic header__square-pic-color header__square-pic-place-right-top"></div>
+      <div class="header__square-pic"></div>
 
       <!-- Заголовок: Научиться учиться -->
-      <div class="header__title header__title-place-left-center">
-        <h1 class="header__title-text">Научиться<br>учиться</h1>
-      </div>
-
+      <h1 class="header__title">Научиться учиться</h1>
 
       <!-- Подзаголовок с текстом внизу слева -->
-      <p class="header__subtitle header__subtitle-text">
+      <p class="header__subtitle">
         Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?
-        <a href="#" class="header__subtitle-link link-color link-text-decoration" target="_blank"> Узнать &rarr;</a>
+        <a href="#" class="header__link" target="_blank"> Узнать &rarr;</a>
       </p>
+
     </header>
 
     <!-- Блок основного контена -->
     <main class="content">
 
       <!-- Секция блок description (средний объем работы) 01.03.2021 -->
-      <section class="description block_color_white">
+      <section class="description">
         <div class="two-columns">
 
           <!-- Бриф -->
-          <div class="two-columns__brief">
-            <h3 class="two-columns__brief_text link-color">Главные проблемы в обучении</h3>
-          </div>
+          <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
 
           <!-- Основной текст блока Бриф-->
           <div class="two-columns__main-text">
 
             <!-- Первый параграф -->
-            <h2 class="two-columns__paragraph">
+            <p class="two-columns__paragraph">
               Ни в школе, ни в институте нас не учат тому, как правильно изучать материал. Мы готовимся к экзаменам и учим билеты.
               Мы тренируемся решать однообразные задачи, чтобы лучше сдать тест, но часто в итоге это не дает нам реального знания.
               Зубрежка быстро выветривается и не приносит пользы.
-            </h2>
+            </p>
 
-              <!-- Выделенная фраза внутри параграфа -->
-              <span class="two-columns__span-accent">
-                <strong>Вывод:</strong> учиться тоже нужно уметь, но почему-то этому мало где учат. Что с этим делать?
-              </span>
+            <!-- Второй параграф с выделеной фразой в тексте -->
+            <p class="two-columns__paragraph">
+              <span class="two-columns__span-accent">Вывод:</span> учиться тоже нужно уметь, но почему-то этому мало где учат. Что с этим делать?
+            </p>
 
-            <!-- Второй параграф -->
-            <h2 class="two-columns__paragraph">
+            <!-- Третий параграф -->
+            <p class="two-columns__paragraph">
               Конкретные техники и упражнения помогают изменить подход к обучению, сделать его эффективным и захватывающим.
               Эти же техники применяются на примере обучения в Практикуме.
-            </h2>
+            </p>
 
           </div>
         </div>
       </section>
 
       <!-- Секция блок digits (средний объем работы) 01.03.2021 -->
-      <section class="digits block_color_white">
+      <section class="digits">
 
         <!-- Заголовок секции -->
-        <h2 class="section__title section__title-text">Цифры и факты</h2>
+        <h2 class="section-title">Цифры и факты</h2>
 
         <!-- Подзаголовок секции-->
-        <p class="section__subtitle section__subtitle-text">Про учёбу и мозг</p>
+        <p class="section-subtitle">Про учёбу и мозг</p>
 
         <!-- Блок карточек в две строки-->
         <div class="table">
           <div class="table__cell">
             <h3 class="table__heading">86 миллиардов</h3>
-            <h4 class="table__text table__text-padding-top">Число нейронов в мозге человека</h4>
+            <p class="table__text">Число нейронов в мозге человека</p>
           </div >
           <div class="table__cell">
             <h3 class="table__heading">2.1 миллиарда</h3>
-            <h4 class="table__text table__text-padding-top">Число нуждающихся в повышении квалификации</h4>
-            <h5 class="table__text table__text-padding-top">Всемирный Банк, 2017</h5>
+            <p class="table__text">Число нуждающихся в повышении квалификации</p>
+            <p class="table__text">Всемирный Банк, 2017</p>
           </div >
           <div class="table__cell">
             <h3 class="table__heading">1000 терабайт</h3>
-            <h4 class="table__text table__text-padding-top">Объём памяти человека</h4>
+            <p class="table__text">Объём памяти человека</p>
           </div >
           <div class="table__cell">
             <h3 class="table__heading">500 триллионов</h3>
-            <h4 class="table__text table__text-padding-top">Число ответственных за обучение нервных синапсов у взрослого человека</h4>
+            <p class="table__text">Число ответственных за обучение нервных синапсов у взрослого человека</p>
           </div >
           <div class="table__cell">
             <h3 class="table__heading">420 миллионов</h3>
-            <h4 class="table__text table__text-padding-top">Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства</h4>
-            <h5 class="table__text table__text-padding-top">Всемирный Банк, 2017</h5>
+            <p class="table__text">Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства</p>
+            <p class="table__text">Всемирный Банк, 2017</p>
           </div >
           <div class="table__cell">
             <h3 class="table__heading">17–20 лет</h3>
-            <h4 class="table__text table__text-padding-top">Пик обучаемости</h4>
+            <p class="table__text">Пик обучаемости</p>
           </div >
           <div class="table__cell">
             <h3 class="table__heading">1885 год</h3>
-            <h4 class="table__text table__text-padding-top">Открытие кривой забывания</h4>
+            <p class="table__text">Открытие кривой забывания</p>
           </div >
           <div class="table__cell">
             <h3 class="table__heading">1889 год</h3>
-            <h4 class="table__text table__text-padding-top">Открытие условного рефлекса</h4>
+            <p class="table__text">Открытие условного рефлекса</p>
           </div >
         </div>
       </section>
 
       <!-- Секция блок Феинман (большой объем работы) 02.03.2021-->
       <!-- Флекс контейнер для блоков -->
-      <section class="feynman block_color_gray">
+      <section class="feynman">
 
         <!--Заголовок-->
-        <h2 class="feynman__title feynman__title-text">Метод Феинмана</h2>
+        <h2 class="feynman__title">Метод Феинмана</h2>
 
         <!--Подзаголовок-->
-        <h3 class="feynman__subtitle feynman__subtitle-text">Выучить и не забыть.</h3>
+        <h3 class="feynman__subtitle">Выучить и не забыть.</h3>
 
         <!--Ссылка-->
-        <a href="https://lifehacker.ru/metod-fejnmana/" class="feynman__link feynman__link-text link-color link-text-decoration" target="_blank">Подробнее &rarr;</a>
+        <a href="https://lifehacker.ru/metod-fejnmana/" class="feynman__link" target="_blank">Подробнее &rarr;</a>
       </section>
 
       <!-- Секция блок Кауфман (средний объем работы) 02.03.2021-->
-      <section class="kaufman block_color_black text-color-white">
+      <section class="kaufman">
 
         <!-- Заголовок секции-->
-        <h2 class="section__title section__title-text">Принципы обучения</h2>
+        <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
 
         <!-- Позаголовок секции-->
-        <h3 class="section__subtitle section__subtitle-text">от Джоша Кауфмана</h3>
+        <h3 class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</h3>
 
         <!-- Блок с набором из 10 карточек-->
-        <div class="table">
+        <div class="table table_theme_dark">
 
           <!-- Карточка 1 с заголовком и основным тестом-->
           <div class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading">1</h4>
-            <h5 class="table__text table__text-padding-top">Выберите привлекательный проект.</h5>
+            <h4 class="table__heading table__heading_theme_dark">1</h4>
+            <p class="table__text table__text_theme_dark">Выберите привлекательный проект.</p>
           </div>
 
           <!-- Карточка 2 с заголовком и основным тестом-->
           <div class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading">2</h4>
-            <h5 class="table__text table__text-padding-top">Сосредоточьтесь на каком-то одном навыке.</h5>
+            <h4 class="table__heading table__heading_theme_dark">2</h4>
+            <p class="table__text table__text_theme_dark">Сосредоточьтесь на каком-то одном навыке.</p>
           </div>
 
           <!-- Карточка 3 с заголовком и основным тестом-->
           <div class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading">3</h4>
-            <h5 class="table__text table__text-padding-top">Определите целевой уровень мастерства.</h5>
+            <h4 class="table__heading table__heading_theme_dark">3</h4>
+            <p class="table__text table__text_theme_dark">Определите целевой уровень мастерства.</p>
           </div>
 
           <!-- Карточка 4 с заголовком и основным тестом-->
           <div class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading">4</h4>
-            <h5 class="table__text table__text-padding-top">Разбейте навык на элементы.</h5>
+            <h4 class="table__heading table__heading_theme_dark">4</h4>
+            <p class="table__text table__text_theme_dark">Разбейте навык на элементы.</p>
           </div>
 
           <!-- Карточка 5 с заголовком и основным тестом-->
           <div class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading">5</h4>
-            <h5 class="table__text table__text-padding-top">Приготовьте всё необходимое для занятий.</h5>
+            <h4 class="table__heading table__heading_theme_dark">5</h4>
+            <p class="table__text table__text_theme_dark">Приготовьте всё необходимое для занятий.</p>
           </div>
 
           <!-- Карточка 6 с заголовком и основным тестом-->
           <div class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading">6</h4>
-            <h5 class="table__text table__text-padding-top">Устраните препятствия для занятий.</h5>
+            <h4 class="table__heading table__heading_theme_dark">6</h4>
+            <p class="table__text table__text_theme_dark">Устраните препятствия для занятий.</p>
           </div>
 
           <!-- Карточка 7 с заголовком и основным тестом-->
           <div class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading">7</h4>
-            <h5 class="table__text table__text-padding-top">Выделите специальное время для занятий.</h5>
+            <h4 class="table__heading table__heading_theme_dark">7</h4>
+            <p class="table__text table__text-theme_dark">Выделите специальное время для занятий.</p>
           </div>
 
           <!-- Карточка 8 с заголовком и основным тестом-->
           <div class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading">8</h4>
-            <h5 class="table__text table__text-padding-top">Создайте быстрые петли обратной связи.</h5>
+            <h4 class="table__heading table__heading_theme_dark">8</h4>
+            <p class="table__text table__text_theme_dark">Создайте быстрые петли обратной связи.</p>
           </div>
 
           <!-- Карточка 9 с заголовком и основным тестом-->
           <div class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading">9</h4>
-            <h5 class="table__text table__text-padding-top">Занимайтесь по расписанию, короткими интенсивными интервалами.</h5>
+            <h4 class="table__heading table__heading_theme_dark">9</h4>
+            <p class="table__text table__text_theme_dark">Занимайтесь по расписанию, короткими интенсивными интервалами.</p>
           </div>
 
           <!-- Карточка 10 с заголовком и основным тестом -->
           <div class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading">10</h4>
-            <h5 class="table__text table__text-padding-top">Уделяйте внимание количеству и скорости.</h5>
+            <h4 class="table__heading table__heading_theme_dark">10</h4>
+            <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
           </div>
         </div>
 
         <!-- Блок с изображением синего треугольника -->
         <div class="kaufman__triangle">
-          <img src="./images/kaufman-triangle.svg" alt="синий треугольник">
+          <!-- <img src="./images/kaufman-triangle.svg" alt="синий треугольник"> -->
         </div>
 
       </section>
     </main>
 
     <!-- Подвал сайта блок footer (небольшой объем работы) 02.03.2021 -->
-    <footer class="footer block_color_black text-color-white">
-
-      <!-- Блок подвала страницы с колонками -->
+    <footer class="footer">
       <div class="footer__columns">
-
-        <!-- Левая колонка с логотипом Яндекс Практикум и строкой копирайта-->
-        <div class="footer__column">
-
+        <div class="footer__column footer__column_content_copyright">
           <!-- Блок с логотипом Яндекс Практикум в темной теме -->
           <a class="logo logo_place_footer" href="https://praktikum.yandex.ru/" target="_blank">
             <img src="./images/logo_place_footer.svg" alt = "Логотип: Яндекс Практикум в темных тонах">
           </a>
-
           <!-- Блок с копирайтом, годом, именем и фамилией автора -->
-          <h2 class="footer__author">&#169; 2021. Александр Мясоед</h2>
+          <p class="footer__author">&#169; 2021. Александр Мясоед</p>
         </div>
-        <div class="footer__column footer__column_right">
 
-          <!-- Блок с колонкой: Информация о практикуме -->
-          <div class="footer__sub-column">
+        <div class="footer__column footer__column_content_info">
 
-            <!-- Колонка с информацией о Яндекс Практикуме -->
-            <div class="footer__column_info footer__table__cell">
+          <!-- Заголовок колонки -->
+          <h2 class="footer__column-heading">О практикуме</h2>
 
-              <!-- Заголовок колонки -->
-              <h2 class="footer__column-heading">О практикуме</h2>
+          <!-- Блок с тремя ссылкамии -->
+          <nav>
+            <ul class="footer__ul">
+              <li>
+                <a href="https://praktikum.yandex.ru/web/" class="footer__column-links" target="_blank">Главная</a>
+              </li>
+              <li>
+                <a href="https://praktikum.yandex.ru/web/" class="footer__column-links" target="_blank">Концепция</a>
+              </li>
+              <li>
+                <a href="https://praktikum.yandex.ru/web/" class="footer__column-links" target="_blank">Наставники</a>
+              </li>
+            </ul>
+          </nav>
 
-              <!-- Блок с тремя ссылкамии -->
-              <div class="footer__column-links">
-                <a href="https://praktikum.yandex.ru/web/" class="link-text-decoration footer__column-links-text" target="_blank">Главная</a>
-                <a href="https://praktikum.yandex.ru/web/" class="link-text-decoration footer__column-links-text" target="_blank">Концепция</a>
-                <a href="https://praktikum.yandex.ru/web/" class="link-text-decoration footer__column-links-text" target="_blank">Наставники</a>
-              </div>
+        </div>
 
-            </div>
-          </div>
-          <!-- Блок с колонкой: Соцсети-->
-          <div class="footer__sub-column">
+        <div class="footer__column footer__column_content_social">
+          <!-- Заголовок колонки -->
+          <h2 class="footer__column-heading">Соцсети</h2>
 
-            <!-- Колонка Соцсети -->
-            <div class="footer__column_social footer__table__cell">
+          <!-- Блок со ссылкамии на соцсети-->
+          <ul class="footer__ul">
+            <li>
+              <a href="https://www.facebook.com/yandex.praktikum/" class="footer__column-links" target="_blank">
+                <img src="./images/facebook_color_white.svg" class="footer__social-icon" alt="Иконка Facebook">
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a href="https://vk.com/yandex.praktikum" class="footer__column-links" target="_blank">
+                <img src="./images/vk_color_white.svg" class="footer__social-icon" alt="Иконка Вконтакте">
+                ВКонтакте
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/yndx.praktikum/" class="footer__column-links" target="_blank">
+                <img src="./images/instagram_color_white.svg" class="footer__social-icon" alt="Иконка Instagram">
+                Instagram
+              </a>
+            </li>
+          </ul>
 
-              <!-- Заголовок колонки -->
-              <h2 class="footer__column-heading">Соцсети</h2>
-
-              <!-- Блок с ссылкамии на соцсети-->
-              <div class="footer__column-links">
-                <a href="https://www.facebook.com/yandex.praktikum/" class="link-text-decoration footer__column-links-text" target="_blank">
-                  <img src="./images/facebook_color_white.svg" class="footer__social-icon" alt="Иконка Facebook">
-                  Facebook
-                </a>
-                <a href="https://vk.com/yandex.praktikum" class="link-text-decoration footer__column-links-text" target="_blank">
-                  <img src="./images/vk_color_white.svg" class="footer__social-icon" alt="Иконка Вконтакте">
-                  ВКонтакте
-                </a>
-                <a href="https://www.instagram.com/yndx.praktikum/" class="link-text-decoration footer__column-links-text" target="_blank">
-                  <img src="./images/instagram_color_white.svg" class="footer__social-icon" alt="Иконка Instagram">
-                  Instagram
-                </a>
-              </div>
-
-            </div>
-          </div>
         </div>
       </div>
     </footer>
