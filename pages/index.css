@@ -6,22 +6,10 @@
 /*Код красной границы вокруг блоков теперь в root.css*/
 
 @import url(../blocks/page/page.css);
-/*Подключил к index.css файл page.css. CSS параметры блока page пернес в файд page.css */
+/*Подключил к index.css файл page.css. CSS параметры блока page пернес в файл page.css */
 
-/*Шапка html страницы*/
-.header {
-  margin: 0;
-  padding: 0;
-  display: flex; /*Определил блок header как флекс контейнер*/
-  flex-direction: column; /*выстроить блоки в колонку по вертикали сверху вниз*/
-  justify-content: center; /*выровнять колонку по центру вдоль вертикальной оси*/
-  align-items: flex-start; /*прижать колонку к левому краю*/
-  height: 100vh; /*высота равна высоте окна браузера*/
-  min-height: 600px; /*минимальная высота*/
-  max-height: 756px; /*максимальная высота*/
-  background-color: #f2f2f2; /*цвет фона - серый*/
-  position: relative; /*Блок header - родительский блок для блока logo*/
-}
+@import url(../blocks/header/header.css);
+/*Подключил к index.css файл header.css. CSS параметры блока header пернес в файл header.css*/
 
 /*Селектор блока с логотипом Яндекс Практикум*/
 .logo {
