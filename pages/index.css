@@ -38,82 +38,11 @@
 @import url(../blocks/content/content.css);
 /*Подключил к index.css файл content.css. CSS параметры блока content пернес в файл content.css*/
 
+@import url(../blocks/description/description.css);
+/*Подключил к index.css файл description.css. CSS параметры блока description пернес в файл description.css*/
 
-/*Селектор блока с основным содержимым страницы html
-.content {
-
-}*/
-
-/*Селектор первого блока section*/
-.description {
-  margin: 0;
-  padding: 0;
-  display: flex;  /*создал флекс контейнер*/
-  flex-direction: row; /*задал направление внутри флекс контейнера в ряд слева направо*/
-  justify-content: center; /*выставил блоки внутри флекс контейнера вдоль строки по центру*/
-  align-items: stretch; /*Элементы внутри флекс контейнера растянутся от верха до низа в ряд вдоль оси по верху флекс контейнера*/
-  background-color: #fff; /*цвет фона - белый*/
-}
-
-/*Селектор блока с двумя колонками внутри секции*/
-.two-columns {
-  margin: 0;
-  padding: 0;
-  display: flex; /*создал флекс контейнер*/
-  padding-top: 100px; /*Отсуп от верхнего края флекс контейнера*/
-  padding-bottom: 100px; /*Отсуп от нижнего края флекс контейнера*/
-  width: 80%; /*Ширина 80% от ширины флекс контейнера*/
-  flex-direction: row; /*задал направление внутри флекс контейнера в ряд слева направо*/
-  justify-content: space-between; /*Первый блок прижат к левому краю флекс контейнера, а второй блок - к правому краю*/
-  align-items: flex-start; /*Все блоки прижаты к верхнему краю флекс контенера*/
-}
-
-/*Селектор блока левой колонки с брифом*/
-.two-columns__brief {
-  margin: 0;
-  padding: 0;
-  width: 175px; /*ширина блока*/
-  line-height: 1.2; /*Высота строки*/
-  font-size: 18px; /*Размер шрифта*/
-  font-weight: normal; /*Начертание шрифта нормальное*/
-  text-align: left; /*выравнивание текста по левому краю*/
-  color: #2f80ed;
-}
-
-/*Селектор блока правой колонки с основным текстом*/
-.two-columns__main-text {
-  margin: 0;
-  padding: 0;
-  width: 80%; /*ширина блока 80% от ширины флекс контейнера*/
-  min-width: 784px; /*минимальная ширина блока*/
-
-}
-
-/*Селектор параграфа в блоке правой колонки с основным текстом*/
-.two-columns__paragraph {
-  margin: 0;
-  padding: 0;
-  line-height: 34px; /*Высота строки*/
-  font-size: 24px; /*Размер шрифта*/
-  font-weight: normal; /*Начертание шрифта нормальное*/
-  text-align: left; /*выравнивание текста по левому краю*/
-  padding-bottom: 30px; /*внутрений отступ от нижней границы фдекс контейнера*/
-}
-
-/*С помощью псевдокласса last-of-type убираем нижний отступ у крайнего параграфа в блоке*/
-.two-columns__paragraph:last-of-type {
-  padding-bottom: 0; /*обнуляем внутрений отступ от нижней границы элемента с помощью псевдо класса*/
-}
-
-/*Селектор выделенной фразы внутри параграфа*/
-.two-columns__span-accent {
-  margin: 0;
-  padding: 0;
-  line-height: 34px; /*Высота строки*/
-  font-size: 24px; /*Размер шрифта*/
-  font-weight: bold; /*Начертание шрифта нормальное*/
-  text-align: left; /*выравнивание текста по левому краю*/
-}
+@import url(../blocks/two-columns/two-columns.css);
+/*Подключил к index.css файл two-columns.css. CSS параметры блока two-columns пернес в файл two-columns.css*/
 
 /*Селектор для второй секции - Цифры*/
 .digits {
