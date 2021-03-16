@@ -35,6 +35,9 @@
 @import url(../blocks/logo/_place/logo_place_footer.css);
 /*Подключил к index.css файл logo_place_footer.css. CSS параметры модификатора logo_place_footer пернес в файл logo_place_footer.css*/
 
+@import url(../blocks/content/content.css);
+/*Подключил к index.css файл content.css. CSS параметры блока content пернес в файл content.css*/
+
 
 /*Селектор блока с основным содержимым страницы html
 .content {
