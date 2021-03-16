@@ -1,7 +1,8 @@
-*{
-  /*Временно добавил красную границу вокруг всех блоков для удобства верстки*/
-  border: 1px solid red; Сделал все блоки видимыми: толщина границы 1px, цвет красный
-}
+@import url(../vendor/normalize.css);
+/*Подключил к index.css файл normalize.css, удалил link для normalize.css в index.html*/
+
+@import url(../blocks/root/root.css);
+/*Подключил к index.css файл root.css для редактирования css параметров body*/
 
 /*Блок body*/
 .page {
