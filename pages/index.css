@@ -44,88 +44,39 @@
 @import url(../blocks/two-columns/two-columns.css);
 /*Подключил к index.css файл two-columns.css. CSS параметры блока two-columns пернес в файл two-columns.css*/
 
-/*Селектор для второй секции - Цифры*/
-.digits {
-  margin: 0;
-  padding: 0;
-  display: flex; /*преобразую блок во флекс контейнер*/
-  flex-direction: column; /*блоки разместить в колонку вдоль вертикали сверху вниз*/
-  justify-content: flex-start; /*колонку блоков прижать к верхней нранице флекс контейнера*/
-  align-items: center; /*выровнять колонку блоков по центру вдоль горизонтальной линии*/
-  background-color: #fff; /*цвет фона - белый*/
-}
-/*Селектор заголовка второй секции - Цифры*/
-.section-title {
-  margin: 0;
-  padding: 0;
-  width: 60%; /*ширина блока 60% от ширины флекс контейнера*/
-  /*padding-top: 100px; внутрений отступ от верхнего края флекс контейнера*/
-  line-height: 1.15; /*Высота строки*/
-  font-size: 60px; /*Размер шрифта*/
-  font-weight: bold; /*Начертание шрифта полужирное*/
-  text-align: center; /*выравнивание текста по центру*/
-  z-index: 2;
-}
+@import url(../blocks/digits/digits.css);
+/*Подключил к index.css файл digits.css. CSS параметры блока digits пернес в файл digits.css*/
 
-/*подзаголовок второй секции*/
-.section-subtitle {
-  margin: 0;
-  padding: 0;
-  width: 60%; /*ширина блока 60% от ширины флекс контейнера*/
-  padding-top: 20px; /*внутрений отступ от верхнего края флекс контейнера*/
-  line-height: 34px; /*Высота строки*/
-  font-size: 24px; /*Размер шрифта*/
-  font-weight:normal; /*Начертание шрифта нормальное*/
-  text-align: center; /*выравнивание текста по центру*/
-  z-index: 2;
-}
+@import url(../blocks/two-columns/__brief/two-columns__brief.css);
+/*Подключил к index.css файл two-columns__brief.css. CSS параметры блока two-columns__brief из файла index.css пернес в файл two-columns__brief.css*/
 
-/*блок с карточками второй секции*/
-.table {
-  margin: 0;
-  padding: 0;
-  display: flex; /*преобразую блок во флекс контейнер*/
-  flex-direction: row; /*задал направление внутри флекс контейнера в ряд слева направо*/
-  justify-content: space-between;
-  align-items: stretch;
-  flex-wrap: wrap;
-  width: 1100px; /*ширина флекс контейнера*/
-  padding-bottom: 100px;
-  z-index: 2;
-}
+@import url(../blocks/two-columns/__main-text/two-columns__main-text.css);
+/*Подключил к index.css файл two-columns__main-text.css. CSS параметры блока two-columns__main-text из файла index.css пернес в файл two-columns__main-text.css*/
 
-/*селектор карточки второй секции*/
-.table__cell {
-  margin: 0;
-  padding: 0;
-  display: flex; /*преобразую блок во флекс контейнер*/
-  flex-direction:column; /*задал направление внутри флекс контейнера в ряд сверху вниз*/
-  justify-content: flex-start;
-  align-items: stretch;
-  width: 250px;
-  padding-top: 60px;
-}
+@import url(../blocks/two-columns/__paragraph/two-columns__paragraph.css);
+/*Подключил к index.css файл two-columns__paragraph.css. CSS параметры блока two-columns__paragraph из файла index.css пернес в файл two-columns__paragraph.css*/
 
-/*заголовок карточки второй секции*/
-.table__heading {
-  margin: 0;
-  padding: 0;
-  line-height: 1.15; /*Высота строки*/
-  font-size: 24px; /*Размер шрифта*/
-  font-weight:bold; /*Начертание шрифта полужирное*/
-  text-align: left; /*выравнивание текста по по левому краю*/
-}
+@import url(../blocks/two-columns/__span-accent/two-columns__span-accent.css);
+/*Подключил к index.css файл two-columns__span-accent.css. CSS параметры блока two-columns__span-accent из файла index.css пернес в файл two-columns__span-accent.css*/
 
-/*текст карточки второй секции*/
-.table__text {
-  margin: 0;
-  padding: 0;
-  line-height: 1.2; /*Высота строки*/
-  font-size: 18px; /*Размер шрифта*/
-  font-weight:normal; /*Начертание шрифта нормальное*/
-  text-align: left; /*выравнивание текста по левому краю*/
-  padding-top: 20px; /*отступ от верхней границы элемента*/
-}
+@import url(../blocks/section-title/section-title.css);
+/*Подключил к index.css файл section-title.css. CSS параметры блока section-title из файла index.css пернес в файл section-title.css*/
+
+@import url(../blocks/section-subtitle/section-subtitle.css);
+/*Подключил к index.css файл section-subtitle.css. CSS параметры блока section-subtitle из файла index.css пернес в файл section-subtitle.css*/
+
+@import url(../blocks/table/table.css);
+/*Подключил к index.css файл table.css. CSS параметры блока table из файла index.css пернес в файл table.css*/
+
+@import url(../blocks/table/__cell/table__cell.css);
+/*Подключил к index.css файл table__cell.css. CSS параметры блока table__cell из файла index.css пернес в файл table__cell.css*/
+
+@import url(../blocks/table/__heading/table__heading.css);
+/*Подключил к index.css файл table__heading.css. CSS параметры блока table__heading из файла index.css пернес в файл table__heading.css*/
+
+@import url(../blocks/table/__text/table__text.css);
+/*Подключил к index.css файл table__text.css. CSS параметры блока table__text из файла index.css пернес в файл table__text.css*/
+
 
 /*Фдекс контейнер для остальных блоков*/
 .feynman {

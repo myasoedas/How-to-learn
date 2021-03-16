@@ -1,0 +1,13 @@
+/*блок с карточками второй секции*/
+.table {
+  margin: 0;
+  padding: 0;
+  display: flex; /*преобразую блок во флекс контейнер*/
+  flex-direction: row; /*задал направление внутри флекс контейнера в ряд слева направо*/
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  width: 1100px; /*ширина флекс контейнера*/
+  padding-bottom: 100px;
+  z-index: 2;
+}

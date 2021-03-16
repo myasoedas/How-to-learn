@@ -1,17 +1,3 @@
-@import url(./__brief/two-columns__brief.css);
-/*Подключил к two-columns.css файл two-columns__brief.css. CSS параметры блока two-columns__brief из файла index.css пернес в файл two-columns__brief.css*/
-
-@import url(./__main-text/two-columns__main-text.css);
-/*Подключил к two-columns.css файл two-columns__main-text.css. CSS параметры блока two-columns__main-text из файла index.css пернес в файл two-columns__main-text.css*/
-
-@import url(./__paragraph/two-columns__paragraph.css);
-/*Подключил к two-columns.css файл two-columns__paragraph.css. CSS параметры блока two-columns__paragraph из файла index.css пернес в файл two-columns__paragraph.css*/
-
-@import url(./__span-accent/two-columns__span-accent.css);
-/*Подключил к two-columns.css файл two-columns__paragraph.css. CSS параметры блока two-columns__paragraph из файла index.css пернес в файл two-columns__paragraph.css*/
-
-
-
 /*Селектор блока с двумя колонками внутри секции*/
 .two-columns {
   margin: 0;
