@@ -11,6 +11,21 @@
 @import url(../blocks/header/header.css);
 /*Подключил к index.css файл header.css. CSS параметры блока header пернес в файл header.css*/
 
+@import url(../blocks/header/__title/header__title.css);
+/*Подключил к index.css файл header__title.css. CSS параметры блока header__title пернес в файл header__title.css*/
+
+@import url(../blocks/header/__subtitle/header__subtitle.css);
+/*Подключил к index.css файл header__subtitle.css. CSS параметры блока header__subtitle пернес в файл header__subtitle.css*/
+
+@import url(../blocks/header/__link/header__link.css);
+/*Подключил к index.css файл header__link.css. CSS параметры блока header__link пернес в файл header__link.css*/
+
+@import url(../blocks/header/__main-illustration/header__main-illustration.css);
+/*Подключил к index.css файл header__main-illustration.css. CSS параметры блока header__main-illustration пернес в файл header__main-illustration.css*/
+
+@import url(../blocks/header/__square-pic/header__square-pic.css);
+/*Подключил к index.css файл header__square-pic.css. CSS параметры блока header__square-pic пернес в файл header__square-pic.css*/
+
 /*Селектор блока с логотипом Яндекс Практикум*/
 .logo {
   margin: 0;
@@ -26,69 +41,6 @@
   top: 30px; /*отступ сверху от header 30px*/
   left: 64px; /*отступ слева от header 64px*/
   background-image:url(../images/logo_place_header.svg); /*Добавил логотип - logo_place_header.svg*/
-}
-
-/*Создал дополнительный флекс контейнер и установил ему необходимую ширину и высоту аналогичную блоку header
-Поместил во флекс контейнер заголовк h1 и выровнял его по левому краю и по вериткали по центру*/
-.header__title {
-  margin: 0;
-  padding: 0;
-  width: 730px; /*Ширина блока*/
-  padding-left: 64px; /*отступ слева от родительского блока header 64px*/
-  line-height: 96px; /*Высота строки*/
-  font-size: 102px; /*Размер шрифта*/
-  font-weight: bold; /*Начертание шрифта полужирное*/
-  z-index: 3; /*Блок должен быть поверх всех блоков кроме logo*/
-}
-
-/*Подзаголовок шапки html страницы*/
-.header__subtitle {
-  margin: 0;
-  padding: 0;
-  position: absolute; /*Установил для бока абсолютное позиционирование относительно родительского блока header*/
-  width: 388px; /*Ширина блока*/
-  left: 64px; /*отступ слева от header 64px*/
-  bottom: 30px; /*отступ снизу от header 30px*/
-  line-height: 25px; /*Высота строки*/
-  font-size: 18px; /*Размер шрифта*/
-  font-weight: normal; /*Начертание шрифта нормальное*/
-  z-index: 4; /*Блок должен быть поверх всех блоков*/
-}
-
-/*Селектор ссылки в подзаголовке блока header*/
-.header__link {
-  margin: 0;
-  padding: 0;
-  line-height: 25px; /*Высота строки*/
-  font-size: 18px; /*Размер шрифта*/
-  font-weight: normal; /*Начертание шрифта нормальное*/
-  text-decoration: none; /*убрал нижнее подчеркивание у ссылки*/
-  color: #2f80ed; /*цвет текста - синий*/
-}
-
-/*Блок с илюстрацией*/
-.header__main-illustration {
-  margin: 0;
-  padding: 0;
-  width: 765px; /*Ширина блока*/
-  height: 608px; /*Высота блока*/
-  position: absolute; /*Установил для бока абсолютное позиционирование относительно родительского блока header*/
-  right: 0px; /*отступ слева от header*/
-  bottom: 0px; /*отступ снизу от header*/
-  z-index: 2; /*Блок должен быть ниже logo, title, subtitle*/
-}
-
-/*Блок - синий квадрат*/
-.header__square-pic {
-  margin: 0;
-  padding: 0;
-  width: 568px; /*Ширина блока*/
-  height: 568px; /*Высота блока*/
-  background-color: #2f80ed; /*установил синий цвет фона для блока*/
-  position: absolute; /*Установил для бока абсолютное позиционирование относительно родительского блока header*/
-  right: 0px; /*отступ слева от header*/
-  top: 64px; /*отступ снизу от header*/
-  z-index: 1; /*Блок должен быть ниже logo, title, subtitle, main-illustration*/
 }
 
 /*Селектор блока с основным содержимым страницы html

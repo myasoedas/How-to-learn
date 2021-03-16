@@ -1,0 +1,11 @@
+/*Блок с илюстрацией*/
+.header__main-illustration {
+  margin: 0;
+  padding: 0;
+  width: 765px; /*Ширина блока*/
+  height: 608px; /*Высота блока*/
+  position: absolute; /*Установил для бока абсолютное позиционирование относительно родительского блока header*/
+  right: 0px; /*отступ слева от header*/
+  bottom: 0px; /*отступ снизу от header*/
+  z-index: 2; /*Блок должен быть ниже logo, title, subtitle*/
+}
