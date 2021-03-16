@@ -26,22 +26,15 @@
 @import url(../blocks/header/__square-pic/header__square-pic.css);
 /*Подключил к index.css файл header__square-pic.css. CSS параметры блока header__square-pic пернес в файл header__square-pic.css*/
 
-/*Селектор блока с логотипом Яндекс Практикум*/
-.logo {
-  margin: 0;
-  padding: 0;
-  width: 183px; /*Ширина блока logo*/
-  height: 32px; /*Высота блока logo*/
-  z-index: 4; /*Блок logo должен быть поверх всех блоков*/
-}
+@import url(../blocks/logo/logo.css);
+/*Подключил к index.css файл logo.css. CSS параметры блока logo пернес в файл logo.css*/
 
-/*Модификатор для блока с логотипом, определяющий его параметры для отображения в header*/
-.logo_place_header {
-  position: absolute; /*Установил для бока logo абсолютное позиционирование относительно родительского блока header*/
-  top: 30px; /*отступ сверху от header 30px*/
-  left: 64px; /*отступ слева от header 64px*/
-  background-image:url(../images/logo_place_header.svg); /*Добавил логотип - logo_place_header.svg*/
-}
+@import url(../blocks/logo/_place/logo_place_header.css);
+/*Подключил к index.css файл logo_place_header.css. CSS параметры модификатора logo_place_header пернес в файл logo_place_header.css*/
+
+@import url(../blocks/logo/_place/logo_place_footer.css);
+/*Подключил к index.css файл logo_place_footer.css. CSS параметры модификатора logo_place_footer пернес в файл logo_place_footer.css*/
+
 
 /*Селектор блока с основным содержимым страницы html
 .content {
@@ -371,14 +364,6 @@
 
 .footer__column_content_copyright {
   flex-basis: 711px; /*базовая ширина флекс контейнера*/
-}
-
-/*Модификатор размеров блока logo для подвала страницы*/
-.logo_place_footer {
-  width: 183px; /*Ширина блока logo*/
-  height: 35px; /*Высота блока logo*/
-  padding-left: 0; /*отступ сверху 0*/
-  padding-top: 0; /*отступ слева 0*/
 }
 
 /*Блок копирайта в подвале html страницы*/

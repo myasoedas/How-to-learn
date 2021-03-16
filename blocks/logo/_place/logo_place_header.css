@@ -1,0 +1,7 @@
+/*Модификатор для блока с логотипом, определяющий его параметры для отображения в header*/
+.logo_place_header {
+  position: absolute; /*Установил для бока logo абсолютное позиционирование относительно родительского блока header*/
+  top: 30px; /*отступ сверху от header 30px*/
+  left: 64px; /*отступ слева от header 64px*/
+  background-image:url(../images/logo_place_header.svg); /*Добавил логотип - logo_place_header.svg*/
+}
