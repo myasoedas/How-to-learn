@@ -1,0 +1,10 @@
+/*Подзаголовок секции*/
+.feynman__subtitle {
+  margin: 0;
+  padding: 0;
+  padding-top: 70px; /*отступ от верхней границы флекс контейнера*/
+  line-height: 51px; /*Высота строки*/
+  font-size: 36px; /*Размер шрифта*/
+  font-weight: normal; /*Начертание шрифта нормальное*/
+  text-align: center; /*выравнивание текста по центру*/
+}

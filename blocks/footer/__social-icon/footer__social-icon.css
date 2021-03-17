@@ -1,0 +1,8 @@
+/*Модификатор для иконки соцсети в подвале*/
+.footer__social-icon {
+  margin: 0;
+  padding: 0;
+  width: 16px; /*ширина*/
+  height: 16px; /*высота*/
+  padding-right: 10px; /*внутрений отступ справа*/
+}

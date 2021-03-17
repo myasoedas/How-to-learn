@@ -8,6 +8,8 @@
 @import url(../blocks/page/page.css);
 /*Подключил к index.css файл page.css. CSS параметры блока page пернес в файл page.css */
 
+
+/*Блок Научиться учиться____________________________________________________________________________________________*/
 @import url(../blocks/header/header.css);
 /*Подключил к index.css файл header.css. CSS параметры блока header пернес в файл header.css*/
 
@@ -32,9 +34,8 @@
 @import url(../blocks/logo/_place/logo_place_header.css);
 /*Подключил к index.css файл logo_place_header.css. CSS параметры модификатора logo_place_header пернес в файл logo_place_header.css*/
 
-@import url(../blocks/logo/_place/logo_place_footer.css);
-/*Подключил к index.css файл logo_place_footer.css. CSS параметры модификатора logo_place_footer пернес в файл logo_place_footer.css*/
 
+/*Блок главные проблемы в обучении_____________________________________________________________________________________*/
 @import url(../blocks/content/content.css);
 /*Подключил к index.css файл content.css. CSS параметры блока content пернес в файл content.css*/
 
@@ -44,6 +45,9 @@
 @import url(../blocks/two-columns/two-columns.css);
 /*Подключил к index.css файл two-columns.css. CSS параметры блока two-columns пернес в файл two-columns.css*/
 
+
+
+/*Блок цифры и факты____________________________________________________________________________________________________*/
 @import url(../blocks/digits/digits.css);
 /*Подключил к index.css файл digits.css. CSS параметры блока digits пернес в файл digits.css*/
 
@@ -78,233 +82,83 @@
 /*Подключил к index.css файл table__text.css. CSS параметры блока table__text из файла index.css пернес в файл table__text.css*/
 
 
-/*Фдекс контейнер для остальных блоков*/
-.feynman {
-  margin: 0;
-  padding: 0;
-  display: flex; /*преобразую блок во флекс контейнер*/
-  flex-direction:column; /*задал направление внутри флекс контейнера в ряд сверху вниз*/
-  justify-content: flex-start; /*прижать столбец блоков к верхней границе флекс контейнера*/
-  align-items: center; /*выровнять столбец блоков по вдоль центральной вертикали флекс контейнера*/
-  min-height: 790px; /*высота флекс контейнера*/
-  background-color: #f2f2f2; /*цвет фона - серый*/
-  background-image: url(../images/feynman.png); /*добавил изображение фона*/
-  background-repeat: no-repeat; /*изображение фона не должно копироваться*/
-  background-position: left bottom; /*изображение фона расположить слева внизу*/
-  position: relative; /*Блок feynman - родительский блок для блока feinman__link*/
-}
 
-/*Заголовок секции*/
-.feynman__title {
-  margin: 0;
-  padding: 0;
-  padding-top: 100px; /*отступ от верхней границы флекс контейнера*/
-  width: 648px; /*высота блока заголовка*/
-  line-height: 1.15; /*Высота строки*/
-  font-size: 120px; /*Размер шрифта*/
-  font-weight: bold; /*Начертание шрифта полужирное*/
-  text-align: center; /*выравнивание текста по центру*/
-}
+/*Блок Феинман________________________________________________________________________________________________________________*/
+@import url(../blocks/feynman/feynman.css);
+/*Подключил к index.css файл feynman.css. CSS параметры блока feynman из файла index.css пернес в файл feynman.css*/
 
-/*Подзаголовок секции*/
-.feynman__subtitle {
-  margin: 0;
-  padding: 0;
-  padding-top: 70px; /*отступ от верхней границы флекс контейнера*/
-  line-height: 51px; /*Высота строки*/
-  font-size: 36px; /*Размер шрифта*/
-  font-weight: normal; /*Начертание шрифта нормальное*/
-  text-align: center; /*выравнивание текста по центру*/
-}
+@import url(../blocks/feynman/__title/feynman__title.css);
+/*Подключил к index.css файл feynman__title.css. CSS параметры блока feynman__title из файла index.css пернес в файл feynman__title.css*/
 
-/*Ссылка*/
-.feynman__link {
-  margin: 0;
-  padding: 0;
-  position: absolute; /*подключил абсолютное позиционирование, "вырвал" блок из потока*/
-  right: 48px; /*отсутп справа 48px*/
-  top: 50%; /*отступ сверху - 50% от высоты флекс контейнера*/
-  line-height: 51px; /*Высота строки*/
-  font-size: 36px; /*Размер шрифта*/
-  font-weight: normal; /*Начертание шрифта нормальное*/
-  text-align: right; /*выравнивание текста по правому краю*/
-  text-decoration: none; /*убрал нижнее подчеркивание у ссылки*/
-  color: #2f80ed; /*цвет ссылки - синий*/
-}
+@import url(../blocks/feynman/__subtitle/feynman__subtitle.css);
+/*Подключил к index.css файл feynman__subtitle.css. CSS параметры блока feynman__subtitle из файла index.css пернес в файл feynman__subtitle.css*/
 
-/*Секция метод Кауфмана*/
-.kaufman {
-  margin: 0;
-  padding: 0;
-  display: flex; /*преобразую блок во флекс контейнер*/
-  flex-direction: column; /*задал направление внутри флекс контейнера в ряд сверху вниз*/
-  justify-content: flex-start; /*блок выровнен по центру флекс контейнера по горизонтали и прижат к верху флекс контейнера*/
-  align-items: center; /*выровнять элементы по центральной вертикальной линии флекс контейнера*/
-  overflow: hidden; /*чтобы треугольник не выходил за границу блока*/
-  background-color:  #1f1f1f; /*цвет фона - черный*/
-  position: relative; /*Позиционирование: relative - блок является родителем для вложенных блоков*/
-}
+@import url(../blocks/feynman/__link/feynman__link.css);
+/*Подключил к index.css файл feynman__link.css. CSS параметры блока feynman__link из файла index.css пернес в файл feynman__link.css*/
 
-/*Модификатор для заголовка блока kaufman*/
-.section-title_theme_dark {
-  margin: 0;
-  padding: 0;
-  width: 60%; /*ширина 60% от ширины флекс контейнера kaufman*/
-  padding-top: 90px; /*внутрений отступ от верхнего края section-title*/
-  color: #fff; /*цвет текста - белый*/
-  line-height: 1.15; /*Высота строки*/
-  font-size: 60px; /*Размер шрифта*/
-  font-weight: bold; /*Начертание шрифта полужирное*/
-  text-align: center; /*выравнивание текста по центру*/
-  z-index: 2;
-}
 
-/*Модификатор для подзаголовка блока kaufman*/
-.section-subtitle_theme_dark {
-  margin: 0;
-  padding: 0;
-  width: 60%; /*ширина 60% от ширины флекс контейнера kaufman*/
-  padding-top: 20px; /*внутрений отступ от верхнего края section-subtitle*/
-  color: #fff; /*цвет текста - белый*/
-  line-height: 34px; /*Высота строки*/
-  font-size: 24px; /*Размер шрифта*/
-  font-weight:normal; /*Начертание шрифта нормальное*/
-  text-align: center; /*выравнивание текста по центру*/
-  z-index: 2;
-}
 
-/*Модификатор для таблицы блока kaufman*/
-.table_theme_dark{
-  padding-bottom: 90px;
-}
+/*Блок Кауфман__________________________________________________________________________________________________________________*/
+@import url(../blocks/kaufman/kaufman.css);
+/*Подключил к index.css файл kaufman.css. CSS параметры блока kaufman из файла index.css пернес в файл kaufman.css*/
 
-/*модификатор ячейки таблицы*/
-.table__cell_theme_dark {
-  width: 200px; /*ширина блока 200px*/
-  padding-top: 80px; /*отступ от внутреней верхней границы*/
-  color: white; /*цвет текста - белый*/
-}
+@import url(../blocks/section-title/_theme/section-title_theme_dark.css);
+/*Подключил к index.css файл section-title_theme_dark.css. CSS параметры модификатора section-title_theme_dark из файла index.css пернес в файл section-title_theme_dark.css*/
 
-/*Модификатор заголовка ячейки*/
-.table__heading_theme_dark {
-  color: #fff; /*цвет текста - белый*/
-}
+@import url(../blocks/section-subtitle/_theme/section-subtitle_theme_dark.css);
+/*Подключил к index.css файл section-subtitle_theme_dark.css. CSS параметры модификатора section-subtitle_theme_dark из файла index.css пернес в файл section-subtitle_theme_dark.css*/
 
-.table__text_theme_dark {
-  color: white; /*цвет текста - белый*/
-}
+@import url(../blocks/table/_theme/table_theme_dark.css);
+/*Подключил к index.css файл table_theme_dark.css. CSS параметры модификатора table_theme_dark из файла index.css пернес в файл table_theme_dark.css*/
 
-/*Блок - изображение синего треуголника*/
-.kaufman__triangle {
-  margin: 0;
-  padding: 0;
-  position: absolute; /*задал абсолютное позиционирование - вырвал блок из html потока*/
-  width: 877px; /*ширина*/
-  height: 877px; /*высота*/
-  background-size: cover; /*Чтобы треугольник не выходил за пределы page, а "обрезался" границей блока page*/
-  background-image: url(../images/kaufman-triangle.svg); /*фон блока - синий треуголник*/
-  top: 0; /*Отступ сверху равен 0*/
-  right: -210px; /*сместил блок с треугольником за правую границу блока на 210 пикселей*/
-  z-index: 1; /*блок kaufman__triangle - выше блока kaufman, но ниже всех остальных блоков в секции*/
-}
+@import url(../blocks/table/__cell/_theme/table__cell_theme_dark.css
+);
+/*Подключил к index.css файл table__cell_theme_dark.css. CSS параметры модификатора table__cell_theme_dark из файла index.css пернес в файл table__cell_theme_dark.css*/
 
-/*Блок - подвал html страницы*/
-.footer {
-  margin: 0;
-  padding: 0;
-  display: flex; /*преобразовать блок во флекс контейнер*/
-  flex-direction: row; /*расположить вложенные блоки в колонку по вериткали сверху вниз*/
-  justify-content: center; /*разместить блоки по центру горизонтальной оси*/
-  align-items: flex-start; /*прижать строку к верхней границе*/
-  min-height: 350px; /*установить минимальную высоту блока 350px*/
-  background-color:  #1f1f1f; /*цвет фона - черный*/
-  color: white; /*цвет текста - белый*/
-}
+@import url(../blocks/table/__heading/_theme/table__heading_theme_dark.css);
+/*Подключил к index.css файл table__heading_theme_dark.css. CSS параметры модификатора table__heading_theme_dark из файла index.css пернес в файл table__heading_theme_dark.css*/
 
-/*Блок флекс контейнер для блоков с колонками*/
-.footer__columns {
-  margin: 0;
-  padding: 0;
-  display: flex; /*преобразовать блок во флекс контейнер*/
-  flex-direction: row; /*расположить вложенные блоки в колонку по вериткали сверху вниз*/
-  justify-content: space-between; /*левый блок прижать к левому краю флекс контейнера, правый блок прижать к правому краю флекс контейнера*/
-  align-items: flex-start; /*прижать строку с блоками к верхнему краю флекс контейнера*/
-  width: 90%; /*ширина блока 90% от ширины флекс контейнера*/
-  padding-top: 60px; /*внутрений отступ сверху 60px*/
-  padding-bottom: 40px; /*внутрений нижний отступ снизу 40px*/
-}
+@import url(../blocks/table/__text/_theme/table__text_theme_dark.css);
+/*Подключил к index.css файл table__text_theme_dark.css. CSS параметры модификатора table__text_theme_dark из файла index.css пернес в файл table__text_theme_dark.css*/
 
-/*Столбец блока footer*/
-.footer__column {
-  margin: 0;
-  padding: 0;
-  display: flex; /*преобразовать блок во флекс контейнер*/
-  flex-direction: column; /*расставить блоки по вертикали*/
-  justify-content: space-between; /*первый блок прижать к верхнему краю флекс контейнера, воторой блок - к нижнему краю флекс контейнера*/
-  align-items: flex-start; /*прижать вертикальную колонку блоков к левому краю флекс контейнера*/
-  min-height: 250px; /*минимальная высота флекс контейнера*/
-}
+@import url(../blocks/kaufman/__triangle/kaufman__triangle.css);
+/*Подключил к index.css файл kaufman__triangle.css. CSS параметры блока kaufman__triangle из файла index.css пернес в файл kaufman__triangle.css*/
 
-.footer__column_content_copyright {
-  flex-basis: 711px; /*базовая ширина флекс контейнера*/
-}
 
-/*Блок копирайта в подвале html страницы*/
-.footer__author {
-  margin: 0;
-  padding: 0;
-  padding-top: 18px; /*внутрений верхний отступ*/
-  padding-bottom: 18px; /*внутрений нижний отступ*/
-  padding-left: 0; /*внутрений левый отступ*/
-  line-height: 25px; /*Высота строки*/
-  font-size: 18px; /*Размер шрифта*/
-  font-weight: normal; /*Начертание шрифта нормальное*/
-  text-align: left; /*выравнивание текста по правому краю*/
-}
 
-.footer__column_content_info {
-  justify-content: flex-start; /*первый блок прижать к верхнему краю флекс контейнера, воторой блок - к нижнему краю флекс контейнера*/
-}
+/*Блок footer_______________________________________________________________________________________________________________________*/
+@import url(../blocks/footer/footer.css);
+/*Подключил к index.css файл footer.css. CSS параметры блока footer из файла index.css пернес в файл footer.css*/
 
-.footer__column_content_social {
-  justify-content: flex-start; /*первый блок прижать к верхнему краю флекс контейнера, воторой блок - к нижнему краю флекс контейнера*/
-}
+@import url(../blocks/footer/__columns/footer__columns.css);
+/*Подключил к index.css файл footer__columns.css. CSS параметры блока footer__columns из файла index.css пернес в файл footer__columns.css*/
 
-/*Модификатор для текста в заголовке колонки подвала html страницы*/
-.footer__column-heading {
-  line-height: 30px; /*Высота строки*/
-  font-size: 18px; /*Размер шрифта*/
-  font-weight: bold; /*Начертание шрифта полужирное*/
-  text-align: left; /*выравнивание текста по правому краю*/
-  color: #fff; /*цвет текста - белый*/
-}
+@import url(../blocks/footer/__column/footer__column.css);
+/*Подключил к index.css файл footer__column.css. CSS параметры блока footer__column из файла index.css пернес в файл footer__column.css*/
 
-/*блок список в подвале*/
-.footer__ul {
-  margin: 0;
-  padding: 0;
-  padding-top: 20px; /*внутренний отступ от верхней границы*/
-  padding-bottom: 16px; /*внутрений отступ от нижней границы*/
-  list-style: none; /*убрать левые маркеры списка*/
-}
+@import url(../blocks/logo/_place/logo_place_footer.css);
+/*Подключил к index.css файл logo_place_footer.css. CSS параметры модификатора logo_place_footer пернес в файл logo_place_footer.css*/
 
-/*Блок для вертикального выстраивания ссылок в колонке*/
-.footer__column-links {
-  margin: 0;
-  padding: 0;
-  line-height: 30px; /*Высота строки*/
-  font-size: 18px; /*Размер шрифта*/
-  font-weight: normal; /*Начертание шрифта нормальное*/
-  text-align: left; /*выравнивание текста по правому краю*/
-  text-decoration: none; /*убрал нижнее подчеркивание у ссылки*/
-  color: #fff; /*цвет текста - белый*/
-}
+@import url(../blocks/footer/__column/_content/footer__column_content_copyright.css);
+/*Подключил к index.css файл footer__column_content_copyright.css. CSS параметры модификатора footer__column_content_copyright из файла index.css пернес в файл footer__column_content_copyright.css*/
 
-/*Модификатор для иконки соцсети в подвале*/
-.footer__social-icon {
-  margin: 0;
-  padding: 0;
-  width: 16px; /*ширина*/
-  height: 16px; /*высота*/
-  padding-right: 10px; /*внутрений отступ справа*/
-}
+@import url(../blocks/footer/__author/footer__author.css);
+/*Подключил к index.css файл footer__author.css. CSS параметры модификатора footer__author из файла index.css пернес в файл footer__author.css*/
+
+@import url(../blocks/footer/__column/_content/footer__column_content_info.css);
+/*Подключил к index.css файл footer__column_content_info.css. CSS параметры модификатора footer__column_content_info из файла index.css пернес в файл footer__column_content_info.css*/
+
+@import url(../blocks/footer/__column/_content/footer__column_content_social.css);
+/*Подключил к index.css файл footer__column_content_social.css. CSS параметры модификатора footer__column_content_social из файла index.css пернес в файл footer__column_content_social.css*/
+
+@import url(../blocks/footer/__column-heading/footer__column-heading.css);
+/*Подключил к index.css файл footer__column-heading.css. CSS параметры блока footer__column-heading из файла index.css пернес в файл footer__column-heading.css*/
+
+@import url(../blocks/footer/__ul/footer__ul.css);
+/*Подключил к index.css файл footer__ul.css. CSS параметры блока footer__ul из файла index.css пернес в файл footer__ul.css*/
+
+@import url(../blocks/footer/__column-links/footer__column-links.css);
+/*Подключил к index.css файл footer__column-links.css. CSS параметры блока footer__column-links из файла index.css пернес в файл footer__column-links.css*/
+
+@import url(../blocks/footer/__social-icon/footer__social-icon.css);
+/*Подключил к index.css файл footer__social-icon.css. CSS параметры блока footer__social-icon из файла index.css пернес в файл footer__social-icon.css*/
