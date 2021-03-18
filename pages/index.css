@@ -34,20 +34,29 @@
 @import url(../blocks/logo/_place/logo_place_header.css);
 /*Подключил к index.css файл logo_place_header.css. CSS параметры модификатора logo_place_header пернес в файл logo_place_header.css*/
 
+
+
 /*_________________________________________________________________________________________________*/
 
 /*Блок "Техники обучения Барбары Оакли"*/
 
 /*_________________________________________________________________________________________________*/
+
 @import url(../blocks/techniques/techniques.css);
 /*Блок techniques "Техники обучения Барбары Оакли"*/
 
+@import url(../blocks/cards/cards.css);
+/**/
 
-/*Добавил к заголовку модификатор с параметрами: padding-top 100px padding-bottom 20px*/
+@import url(../blocks/cards/__item/cards__item.css);
 
+@import url(../blocks/cards/__title/cards__title.css);
 
+@import url(../blocks/cards/__description/cards__description.css);
 
+@import url(../blocks/cards/__image/cards__image.css);
 
+@import url(../blocks/cards/__image/_size/cards__image_size.css); /*задает размер изображения в блоке карточки*/
 
 
 
