@@ -36,27 +36,46 @@
 
 
 
-/*_________________________________________________________________________________________________*/
+/*_________________________________________________________________________________________________
 
-/*Блок "Техники обучения Барбары Оакли"*/
-
-/*_________________________________________________________________________________________________*/
+    Секция - блок "Техники обучения Барбары Оакли"
+_________________________________________________________________________________________________*/
 
 @import url(../blocks/techniques/techniques.css);
 /*Блок techniques "Техники обучения Барбары Оакли"*/
 
-@import url(../blocks/cards/cards.css);
+@import url(../blocks/cards/cards.css); /*Блок - контейнер для карточек*/
 /**/
 
-@import url(../blocks/cards/__item/cards__item.css);
+@import url(../blocks/cards/__item/cards__item.css); /*Блок карточки*/
 
-@import url(../blocks/cards/__title/cards__title.css);
+@import url(../blocks/cards/__title/cards__title.css); /*Заголовок карточки*/
 
-@import url(../blocks/cards/__description/cards__description.css);
+@import url(../blocks/cards/__description/cards__description.css); /*Описание карточки*/
 
-@import url(../blocks/cards/__image/cards__image.css);
+@import url(../blocks/cards/__image/cards__image.css); /*Блок с круглым изображением карточки*/
 
-@import url(../blocks/cards/__image/_size/cards__image_size.css); /*задает размер изображения в блоке карточки*/
+@import url(../blocks/cards/__image/_size/cards__image_size.css); /*Модификатор для изображения карточки, чтобы вписать изображение целиком в круг блока*/
+
+
+/*_________________________________________________________________________________________________
+
+    Секция - блок "Видео на Ted"
+_________________________________________________________________________________________________*/
+
+@import url(../blocks/video/video.css);
+
+@import url(../blocks/video/__iframes/video__iframes.css);
+
+@import url(../blocks/video/__iframe/video__iframe.css);
+
+
+/*_________________________________________________________________________________________________
+
+    Секция - блок "История Барбары Оакли"
+_________________________________________________________________________________________________*/
+
+@import url(../blocks/oakley/oakley.css); /*Контейнер для блоков секции*/
 
 
 
