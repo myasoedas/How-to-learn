@@ -1,0 +1,15 @@
+
+.khan__container {
+  margin: 0; /*обнулил внешние отступы*/
+  padding: 0; /*обнулили внутренние отступы*/
+  display: flex; /*преобразовать блок во флекс контейнер*/
+  flex-direction: column; /*блоки размещаются друг за другом сверху вниз*/
+  justify-content: flex-start; /*прижать столбец с блоками к верхнему краю*/
+  align-items: flex-start; /*прижать столбец с блоками к левому краю*/
+  width: 80%; /*ширина блока 80% от ширины родительского блока*/
+  margin: auto;
+  padding-top: 105px; /*top right bottom left - по часовой стрелке*/
+  padding-bottom: 0;
+
+
+}

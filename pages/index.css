@@ -9,7 +9,11 @@
 /*Подключил к index.css файл page.css. CSS параметры блока page пернес в файл page.css */
 
 
-/*Блок Научиться учиться____________________________________________________________________________________________*/
+/*_________________________________________________________________________________________________
+
+    Секция - блок "Научиться учиться"
+  _________________________________________________________________________________________________*/
+
 @import url(../blocks/header/header.css);
 /*Подключил к index.css файл header.css. CSS параметры блока header пернес в файл header.css*/
 
@@ -35,17 +39,29 @@
 /*Подключил к index.css файл logo_place_header.css. CSS параметры модификатора logo_place_header пернес в файл logo_place_header.css*/
 
 
+/*_________________________________________________________________________________________________
+
+    Секция - блок "Главные проблемы в обучении"
+  _________________________________________________________________________________________________*/
+
+  @import url(../blocks/content/content.css);
+  /*Подключил к index.css файл content.css. CSS параметры блока content пернес в файл content.css*/
+
+  @import url(../blocks/description/description.css);
+  /*Подключил к index.css файл description.css. CSS параметры блока description пернес в файл description.css*/
+
+  @import url(../blocks/two-columns/two-columns.css);
+  /*Подключил к index.css файл two-columns.css. CSS параметры блока two-columns пернес в файл two-columns.css*/
+
 
 /*_________________________________________________________________________________________________
 
     Секция - блок "Техники обучения Барбары Оакли"
-_________________________________________________________________________________________________*/
+  _________________________________________________________________________________________________*/
 
-@import url(../blocks/techniques/techniques.css);
-/*Блок techniques "Техники обучения Барбары Оакли"*/
+@import url(../blocks/techniques/techniques.css); /*Блок techniques "Техники обучения Барбары Оакли"*/
 
 @import url(../blocks/cards/cards.css); /*Блок - контейнер для карточек*/
-/**/
 
 @import url(../blocks/cards/__item/cards__item.css); /*Блок карточки*/
 
@@ -61,73 +77,28 @@ ________________________________________________________________________________
 /*_________________________________________________________________________________________________
 
     Секция - блок "Видео на Ted"
-_________________________________________________________________________________________________*/
+  _________________________________________________________________________________________________*/
 
-@import url(../blocks/video/video.css);
+@import url(../blocks/video/video.css); /*Флекс контейнер для блоков*/
 
-@import url(../blocks/video/__iframes/video__iframes.css);
+@import url(../blocks/video/__iframes/video__iframes.css); /*контейнер для iframe блоков*/
 
-@import url(../blocks/video/__iframe/video__iframe.css);
+@import url(../blocks/video/__iframe/video__iframe.css); /*iframe блок для размещения видео с youtube*/
 
 
 /*_________________________________________________________________________________________________
 
     Секция - блок "История Барбары Оакли"
-_________________________________________________________________________________________________*/
+  _________________________________________________________________________________________________*/
 
 @import url(../blocks/oakley/oakley.css); /*Контейнер для блоков секции*/
 
 
+/*_________________________________________________________________________________________________
 
-/*Блок главные проблемы в обучении_____________________________________________________________________________________*/
-@import url(../blocks/content/content.css);
-/*Подключил к index.css файл content.css. CSS параметры блока content пернес в файл content.css*/
+    Секция - блок "Метод Феинмана"
+  _________________________________________________________________________________________________*/
 
-@import url(../blocks/description/description.css);
-/*Подключил к index.css файл description.css. CSS параметры блока description пернес в файл description.css*/
-
-@import url(../blocks/two-columns/two-columns.css);
-/*Подключил к index.css файл two-columns.css. CSS параметры блока two-columns пернес в файл two-columns.css*/
-
-
-
-/*Блок цифры и факты____________________________________________________________________________________________________*/
-@import url(../blocks/digits/digits.css);
-/*Подключил к index.css файл digits.css. CSS параметры блока digits пернес в файл digits.css*/
-
-@import url(../blocks/two-columns/__brief/two-columns__brief.css);
-/*Подключил к index.css файл two-columns__brief.css. CSS параметры блока two-columns__brief из файла index.css пернес в файл two-columns__brief.css*/
-
-@import url(../blocks/two-columns/__main-text/two-columns__main-text.css);
-/*Подключил к index.css файл two-columns__main-text.css. CSS параметры блока two-columns__main-text из файла index.css пернес в файл two-columns__main-text.css*/
-
-@import url(../blocks/two-columns/__paragraph/two-columns__paragraph.css);
-/*Подключил к index.css файл two-columns__paragraph.css. CSS параметры блока two-columns__paragraph из файла index.css пернес в файл two-columns__paragraph.css*/
-
-@import url(../blocks/two-columns/__span-accent/two-columns__span-accent.css);
-/*Подключил к index.css файл two-columns__span-accent.css. CSS параметры блока two-columns__span-accent из файла index.css пернес в файл two-columns__span-accent.css*/
-
-@import url(../blocks/section-title/section-title.css);
-/*Подключил к index.css файл section-title.css. CSS параметры блока section-title из файла index.css пернес в файл section-title.css*/
-
-@import url(../blocks/section-subtitle/section-subtitle.css);
-/*Подключил к index.css файл section-subtitle.css. CSS параметры блока section-subtitle из файла index.css пернес в файл section-subtitle.css*/
-
-@import url(../blocks/table/table.css);
-/*Подключил к index.css файл table.css. CSS параметры блока table из файла index.css пернес в файл table.css*/
-
-@import url(../blocks/table/__cell/table__cell.css);
-/*Подключил к index.css файл table__cell.css. CSS параметры блока table__cell из файла index.css пернес в файл table__cell.css*/
-
-@import url(../blocks/table/__heading/table__heading.css);
-/*Подключил к index.css файл table__heading.css. CSS параметры блока table__heading из файла index.css пернес в файл table__heading.css*/
-
-@import url(../blocks/table/__text/table__text.css);
-/*Подключил к index.css файл table__text.css. CSS параметры блока table__text из файла index.css пернес в файл table__text.css*/
-
-
-
-/*Блок Феинман________________________________________________________________________________________________________________*/
 @import url(../blocks/feynman/feynman.css);
 /*Подключил к index.css файл feynman.css. CSS параметры блока feynman из файла index.css пернес в файл feynman.css*/
 
@@ -141,8 +112,79 @@ ________________________________________________________________________________
 /*Подключил к index.css файл feynman__link.css. CSS параметры блока feynman__link из файла index.css пернес в файл feynman__link.css*/
 
 
+/*_________________________________________________________________________________________________
 
-/*Блок Кауфман__________________________________________________________________________________________________________________*/
+    Секция - блок "Цифры и факты"
+  _________________________________________________________________________________________________*/
+
+  @import url(../blocks/digits/digits.css);
+  /*Подключил к index.css файл digits.css. CSS параметры блока digits пернес в файл digits.css*/
+
+  @import url(../blocks/two-columns/__brief/two-columns__brief.css);
+  /*Подключил к index.css файл two-columns__brief.css. CSS параметры блока two-columns__brief из файла index.css пернес в файл two-columns__brief.css*/
+
+  @import url(../blocks/two-columns/__main-text/two-columns__main-text.css);
+  /*Подключил к index.css файл two-columns__main-text.css. CSS параметры блока two-columns__main-text из файла index.css пернес в файл two-columns__main-text.css*/
+
+  @import url(../blocks/two-columns/__paragraph/two-columns__paragraph.css);
+  /*Подключил к index.css файл two-columns__paragraph.css. CSS параметры блока two-columns__paragraph из файла index.css пернес в файл two-columns__paragraph.css*/
+
+  @import url(../blocks/two-columns/__span-accent/two-columns__span-accent.css);
+  /*Подключил к index.css файл two-columns__span-accent.css. CSS параметры блока two-columns__span-accent из файла index.css пернес в файл two-columns__span-accent.css*/
+
+  @import url(../blocks/section-title/section-title.css);
+  /*Подключил к index.css файл section-title.css. CSS параметры блока section-title из файла index.css пернес в файл section-title.css*/
+
+  @import url(../blocks/section-subtitle/section-subtitle.css);
+  /*Подключил к index.css файл section-subtitle.css. CSS параметры блока section-subtitle из файла index.css пернес в файл section-subtitle.css*/
+
+  @import url(../blocks/table/table.css);
+  /*Подключил к index.css файл table.css. CSS параметры блока table из файла index.css пернес в файл table.css*/
+
+  @import url(../blocks/table/__cell/table__cell.css);
+  /*Подключил к index.css файл table__cell.css. CSS параметры блока table__cell из файла index.css пернес в файл table__cell.css*/
+
+  @import url(../blocks/table/__heading/table__heading.css);
+  /*Подключил к index.css файл table__heading.css. CSS параметры блока table__heading из файла index.css пернес в файл table__heading.css*/
+
+  @import url(../blocks/table/__text/table__text.css);
+  /*Подключил к index.css файл table__text.css. CSS параметры блока table__text из файла index.css пернес в файл table__text.css*/
+
+
+/*_________________________________________________________________________________________________
+
+    Секция - блок "Сулман Хан. Весь Мир - школа"
+  _________________________________________________________________________________________________*/
+
+  @import url(../blocks/khan/khan.css); /*Секция блок khan*/
+
+  @import url(../blocks/khan/khan__container/khan__container.css); /*флекс контейнер khan__container для блоков*/
+
+  @import url(../blocks/khan/__author/khan__author.css);
+
+  @import url(../blocks/khan/__title/khan__title.css);
+
+  @import url(../blocks/khan/__quote/khan__quote.css);
+
+  @import url(../blocks/khan/__quote-author/khan__quote-author.css);
+
+  @import url(../blocks/khan/__quote-author-subline/khan__quote-author-subline.css);
+
+  @import url(../blocks/khan/__book-container/khan__book-container.css);
+
+  @import url(../blocks/khan/__book-pic/khan__book-pic.css);
+
+  @import url(../blocks/khan/__book-pic/_size/khan__book-pic_size.css);
+
+  @import url(../blocks/khan/__buy-link/khan__buy-link.css);
+
+
+
+/*_________________________________________________________________________________________________
+
+    Секция - блок "Принципы обучения от Джоша Кауфмана"
+  _________________________________________________________________________________________________*/
+
 @import url(../blocks/kaufman/kaufman.css);
 /*Подключил к index.css файл kaufman.css. CSS параметры блока kaufman из файла index.css пернес в файл kaufman.css*/
 
@@ -169,8 +211,11 @@ ________________________________________________________________________________
 /*Подключил к index.css файл kaufman__triangle.css. CSS параметры блока kaufman__triangle из файла index.css пернес в файл kaufman__triangle.css*/
 
 
+/*_________________________________________________________________________________________________
 
-/*Блок footer_______________________________________________________________________________________________________________________*/
+    Секция - блок footer "Подвал html страницы"
+  _________________________________________________________________________________________________*/
+
 @import url(../blocks/footer/footer.css);
 /*Подключил к index.css файл footer.css. CSS параметры блока footer из файла index.css пернес в файл footer.css*/
 

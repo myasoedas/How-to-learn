@@ -1,0 +1,9 @@
+
+.khan__title {
+  margin: 0;
+  padding: 0;
+  line-height: 1.15; /*Высота строки*/
+  font-size: 60px; /*Размер шрифта*/
+  font-weight: bold; /*Начертание шрифта полужирное*/
+  text-align: left; /*выравнивание текста по по левому краю*/
+}

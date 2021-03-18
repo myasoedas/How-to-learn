@@ -1,0 +1,10 @@
+
+.khan__quote-author {
+  margin: 0;
+  padding: 0;
+  line-height: 1.15; /*Высота строки*/
+  font-size: 24px; /*Размер шрифта*/
+  font-weight: bold; /*Начертание шрифта полужирное*/
+  text-align: left; /*выравнивание текста по левому краю*/
+  margin: 0 0 10px 0; /*внешний отступ: top right bottom left*/
+}
