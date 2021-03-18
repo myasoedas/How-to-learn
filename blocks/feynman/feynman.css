@@ -13,5 +13,4 @@
   background-repeat: no-repeat; /*изображение фона не должно копироваться*/
   background-position: left bottom; /*изображение фона расположить слева внизу*/
   position: relative; /*Блок feynman - родительский блок для блока feinman__link*/
-  padding-top: 80px; /*внутрений отступ сверху равен 80px*/
 }
