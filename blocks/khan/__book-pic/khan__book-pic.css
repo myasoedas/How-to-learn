@@ -1,9 +1,8 @@
 
 .khan__book-pic {
-  margin: 0; /*обнулил внешние отступы*/
+  margin: 0 48px 0 0; /*внешний отступ: top right bottom left*/
   padding: 0; /*обнулили внутренние отступы*/
   width: 620px; /*ширина*/
   height: 608px; /*высота*/
-  margin: 0 48px 0 0; /*внешний отступ: top right bottom left*/
   overflow: hidden; /*скрыть выходящие за края блока части вложенного изображения*/
 }
