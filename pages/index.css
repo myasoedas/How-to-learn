@@ -73,8 +73,6 @@
 
 @import url(../blocks/cards/__image/cards__image.css); /*Блок с круглым изображением карточки*/
 
-@import url(../blocks/cards/__image/_size/cards__image_size.css); /*Модификатор для изображения карточки, чтобы вписать изображение целиком в круг блока*/
-
 
 /*_________________________________________________________________________________________________
 
@@ -176,10 +174,7 @@
 
   @import url(../blocks/khan/__book-pic/khan__book-pic.css); /*блок для размещения изображения книги*/
 
-  @import url(../blocks/khan/__book-pic/_size/khan__book-pic_size.css); /*указать ширину изображения, чтобы висать его по ширине в блок*/
-
   @import url(../blocks/khan/__buy-link/khan__buy-link.css); /*параметры для ссылки Купить книгу*/
-
 
 
 /*_________________________________________________________________________________________________
@@ -199,15 +194,11 @@
 @import url(../blocks/table/_theme/table_theme_dark.css);
 /*Подключил к index.css файл table_theme_dark.css. CSS параметры модификатора table_theme_dark из файла index.css пернес в файл table_theme_dark.css*/
 
-@import url(../blocks/table/__cell/_theme/table__cell_theme_dark.css
-);
+@import url(../blocks/table/__cell/_theme/table__cell_theme_dark.css);
 /*Подключил к index.css файл table__cell_theme_dark.css. CSS параметры модификатора table__cell_theme_dark из файла index.css пернес в файл table__cell_theme_dark.css*/
 
 @import url(../blocks/table/__heading/_theme/table__heading_theme_dark.css);
 /*Подключил к index.css файл table__heading_theme_dark.css. CSS параметры модификатора table__heading_theme_dark из файла index.css пернес в файл table__heading_theme_dark.css*/
-
-@import url(../blocks/table/__text/_theme/table__text_theme_dark.css);
-/*Подключил к index.css файл table__text_theme_dark.css. CSS параметры модификатора table__text_theme_dark из файла index.css пернес в файл table__text_theme_dark.css*/
 
 @import url(../blocks/kaufman/__triangle/kaufman__triangle.css);
 /*Подключил к index.css файл kaufman__triangle.css. CSS параметры блока kaufman__triangle из файла index.css пернес в файл kaufman__triangle.css*/
@@ -223,8 +214,6 @@
   @import url(../blocks/resources/__logo-zone/resources__logo-zone.css); /*горизонтальный флекс контейнер для блоков с логотипами*/
 
   @import url(../blocks/resources/__logo/resources__logo.css); /*блок с логотипом*/
-
-  @import url(../blocks/resources/__logo/_size/resources__logo_size.css); /*задать высоту изображения в блоке с логотипом*/
 
 
 /*_________________________________________________________________________________________________
