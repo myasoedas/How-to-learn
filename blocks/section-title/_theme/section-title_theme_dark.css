@@ -1,9 +1,8 @@
 /*Модификатор для заголовка блока kaufman*/
 .section-title_theme_dark {
   margin: 0;
-  padding: 0;
+  padding: 90px 0 0 0; /*внутрений отступ сверху 90px*/
   width: 60%; /*ширина 60% от ширины флекс контейнера kaufman*/
-  padding-top: 90px; /*внутрений отступ от верхнего края section-title*/
   color: #fff; /*цвет текста - белый*/
   line-height: 1.15; /*Высота строки*/
   font-size: 60px; /*Размер шрифта*/

@@ -1,13 +1,11 @@
 .cards__item {
   margin: 0;
-  padding: 0;
+  padding: 60px 100px 0 0;
   display: flex; /*преобразую блок во флекс контейнер*/
   flex-direction:column; /*задал направление внутри флекс контейнера в ряд сверху вниз*/
   justify-content: flex-start; /*прижал вложенные блоки к левому краю*/
   align-items: stretch; /*растянул блоки по высоте*/
   width: 240px;
-  padding-top: 60px;
-  padding-right: 100px;
 }
 
 /*Каждый третий блок - внешний отступ справа равен 0*/
