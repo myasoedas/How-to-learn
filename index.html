@@ -7,14 +7,23 @@
   <meta name="author" content="Мясоед Александр">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="./styles/normalize.css"> <!-- Подключил файл normalize.css, чтобы освободить элементы html страницы от параметров браузера, установленных по умолчанию -->
-  <link rel="stylesheet" href="./styles/style.css"> <!-- Подключил файл style.css, чтобы добавлять свои стили-->
-  <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico"> <!-- Добавил файл favicon.ico в папку images и подключил его к файлу index.html чтобы он отображался на вкладке браузера для красоты -->
+  <link rel="stylesheet" href="./pages/index.css">
+  <!-- для index.html создал в папке pages index.css чтобы было по Nested БЭМ-->
+
+  <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+  <!-- Добавил файл favicon.ico в папку images и подключил его к файлу index.html чтобы он отображался на вкладке браузера для красоты -->
 
   <title>Научиться учиться</title>
 </head>
-<body>
+<body class="root">
   <div class="page">
+
+
+    <!--________________________________________
+
+        Блок - Шапка html страницы
+        ________________________________________-->
+
     <!-- Шапка сайта (большой объем работы) 01.03.2021 -->
     <header class="header">
 
@@ -28,8 +37,8 @@
         вопрошающе смотрит мать и младший брат"
       >
 
-      <!-- Синий квадрат за главной илюстрацией-->
-      <div class="header__square-pic"></div>
+      <!-- Синий квадрат за главной илюстрацией. Выполняет непрерывное вращение по часовой стрелке с угловой скоростью 360 градусов за 20 секунд -->
+      <div class="header__square-pic rotation"></div>
 
       <!-- Заголовок: Научиться учиться -->
       <h1 class="header__title">Научиться учиться</h1>
@@ -44,6 +53,12 @@
 
     <!-- Блок основного контена -->
     <main class="content">
+
+
+      <!--___________________________________________
+
+          Секция - блок "Главные проблемы в обучении"
+          ___________________________________________-->
 
       <!-- Секция блок description (средний объем работы) 01.03.2021 -->
       <section class="description">
@@ -76,6 +91,133 @@
           </div>
         </div>
       </section>
+
+
+      <!--_______________________________________________
+
+          Секция - блок "Техники обучения Барбары Оакли"
+          _______________________________________________-->
+
+      <section class="techniques">
+        <!-- Секция блок "Техники обучения Барбары Оакли"-->
+
+          <h2 class="section-title">Техники обучения</h2> <!-- Заголовок секции -->
+
+          <p class="section-subtitle">Пять практик от Барбары Оакли</p> <!-- Подзаголовок секции -->
+
+          <!-- Блок карточек с круглыми фото в 3 столбца. Каждый третий блок - внешний отступ справа равен 0-->
+          <div class="cards"> <!-- Блок в котром лежать все карточки -->
+            <div class="cards__item"> <!-- Блок карточки с круглым изображением, заголовком и основным текстом-->
+                <div class="cards__image"> <!-- Блок с круглой картинкой -->
+                  <img class="cards__image_size" src="./images/cards-attention.png" alt="Книга в руках на фоне пола">
+                </div>
+                <h3 class="cards__title">Два вида внимания</h3> <!-- Блок - заголовок карточки -->
+                <p class="cards__description">Глубокие знания возникают, если чередовать сфокусированное и рассеянное мышление.</p> <!-- Блок с описанием карточки -->
+            </div >
+            <div class="cards__item">
+              <div class="cards__image">
+                <img class="cards__image_size" src="./images/cards-recall.png" alt="Белая статуя мальчика с дудочкой на фоне интерьера музея">
+              </div>
+              <h3 class="cards__title">Recall</h3>
+              <p class="cards__description">Вспоминайте изученное — это позволит соединить разрозненные порции памяти.</p>
+            </div >
+            <div class="cards__item">
+              <div class="cards__image">
+                <img class="cards__image_size" src="./images/cards-interliving.png" alt="Черно белое фото - вид с высоты ступенек на гигансткий хол с высокой крышей огибаемой по краям овальными ребрами стен">
+              </div>
+              <h3 class="cards__title">Интерливинг</h3>
+              <p class="cards__description">Изучайте несколько навыков одновременно, они обогащают друг друга.</p>
+            </div >
+            <div class="cards__item">
+              <div class="cards__image">
+                <img class="cards__image_size" src="./images/cards-question.png" alt="Черно белое фото - вид из окна с высоты во внутрений квадратный двор белого здания с окнам и в низу арками у каждой стены">
+              </div>
+              <h3 class="cards__title">Вопросы</h3>
+              <p class="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас действительно волнует.</p>
+            </div >
+            <div class="cards__item">
+              <div class="cards__image">
+                <img class="cards__image_size" src="./images/cards-competence.png" alt="На вертикально вытянутой ладошке лежит стопка из 6-ти книг">
+              </div>
+              <h3 class="cards__title">Иллюзия компетентности</h3>
+              <p class="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется, что вы владеете новой темой.</p>
+            </div >
+          </div>
+
+      </section>
+
+
+      <!--_______________________________________
+
+          Секция - блок "Видео на Ted"
+          _______________________________________-->
+
+      <section class="video">
+
+        <h2 class="section-title">Видео нa TED</h2> <!-- Заголовок секции -->
+
+        <p class="section-subtitle">Для тех, кто любит прокрастинировать</p> <!-- Подзаголовок секции -->
+
+        <div class="video__iframes"> <!-- Блок, в котором лежат два блока iframe c видео для прокрастинации -->
+
+          <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+
+      </section>
+
+
+      <!--_______________________________________
+
+          Секция - блок "История Барбары Оакли"
+          _______________________________________-->
+
+      <section class="oakley">
+        <div class="two-columns">
+          <!-- Бриф -->
+          <h2 class="two-columns__brief">История Барбары Оакли.</h2>
+
+          <!-- Основной текст блока Бриф-->
+          <div class="two-columns__main-text">
+
+            <!-- Первый параграф -->
+            <p class="two-columns__paragraph">
+              С детства Барбаре не давалась математика. Она считала себя законченным гуманитарием, причём далеко не самым умным. В армии она изучала русский язык,
+              чтобы получить надбавку, да так успешно, что её выдвинули в командиры. Но для продвижения по службе нужно было сдавать математику.
+              И тогда Барбара придумала свой подход к точным наукам. Оказалось, если вам что-то «плохо даётся», ваши добытые трудом знания гораздо глубже,
+              чем у тех, кому всё ясно с первого взгляда.
+            </p>
+
+        </div>
+      </section>
+
+
+      <!--________________________________________
+
+          Секция - блок "Феинман"
+          ________________________________________-->
+
+      <!-- Секция блок Феинман (большой объем работы) 02.03.2021-->
+      <!-- Флекс контейнер для блоков -->
+      <section class="feynman">
+
+        <!--Заголовок-->
+        <h2 class="feynman__title">Метод Феинмана</h2>
+
+        <!--Подзаголовок-->
+        <h3 class="feynman__subtitle">Выучить и не забыть.</h3>
+
+        <!--Ссылка-->
+        <a href="https://lifehacker.ru/metod-fejnmana/" class="feynman__link" target="_blank">Подробнее &rarr;</a>
+      </section>
+
+
+      <!--________________________________________
+
+          Секция - блок "Цифры"
+          ________________________________________-->
 
       <!-- Секция блок digits (средний объем работы) 01.03.2021 -->
       <section class="digits">
@@ -125,19 +267,45 @@
         </div>
       </section>
 
-      <!-- Секция блок Феинман (большой объем работы) 02.03.2021-->
-      <!-- Флекс контейнер для блоков -->
-      <section class="feynman">
+      <!--_____________________________________________
 
-        <!--Заголовок-->
-        <h2 class="feynman__title">Метод Феинмана</h2>
+          Секция - блок "Весь Мир - школа. Салман Хан."
+          _____________________________________________-->
 
-        <!--Подзаголовок-->
-        <h3 class="feynman__subtitle">Выучить и не забыть.</h3>
+      <section class="khan">
+        <div class="khan__container">
 
-        <!--Ссылка-->
-        <a href="https://lifehacker.ru/metod-fejnmana/" class="feynman__link" target="_blank">Подробнее &rarr;</a>
+          <h2 class="khan__author">Салман Хан</h2>
+
+          <h3 class="khan__title">Весь мир — школа</h3>
+
+          <p class="khan__quote">
+            Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем,
+            кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.
+          </p>
+
+          <p class="khan__quote-author">Джордж Лукас</p>
+
+          <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
+
+          <div class="khan__book-container">
+
+            <div class="khan__book-pic">
+              <img class="khan__book-pic_size" src="./images/khan-book.jpg" alt="цветная обложка книги Салмана Хана: Весь Мир - школа">
+            </div>
+
+            <a class="khan__buy-link" href="https://ru.khanacademy.org/" target="_blank">Купить книгу &rarr;</a>
+
+          </div>
+
+        </div>
+
       </section>
+
+      <!--________________________________________
+
+          Секция - блок "Кауфман"
+          ________________________________________-->
 
       <!-- Секция блок Кауфман (средний объем работы) 02.03.2021-->
       <section class="kaufman">
@@ -213,12 +381,53 @@
         </div>
 
         <!-- Блок с изображением синего треугольника -->
-        <div class="kaufman__triangle">
+        <div class="kaufman__triangle rotation">
           <!-- <img src="./images/kaufman-triangle.svg" alt="синий треугольник"> -->
         </div>
 
       </section>
+
+
+      <!--_______________________________________
+
+          Секция - блок "Полезные ресурсы"
+          _______________________________________-->
+
+      <section class="resources">
+
+        <h2 class="section-title">Полезные ресурсы</h2>
+
+        <h3 class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</h3>
+
+        <div class="resources__logo-zone">
+
+          <div class="resources__logo">
+            <a class="resources__link" href="https://arzamas.academy/" target="_blank"><img class="resources__logo_size" src="./images/resources-arzamas.svg" alt="Светлый логотип Arzamas"></a>
+          </div>
+
+          <div class="resources__logo">
+            <a class="resources__link" href="https://nplus1.ru/" target="_blank"><img class="resources__logo_size" src="./images/resources-n1.svg" alt="Светлый логотип N+1"></a>
+          </div>
+
+          <div class="resources__logo">
+            <a class="resources__link" href="https://strelka.com" target="_blank"><img class="resources__logo_size" src="./images/resources-strelka.svg" alt="Светлый логотип STRELKA"></a>
+          </div>
+
+          <div class="resources__logo">
+            <a class="resources__link" href="https://polka.academy/" target="_blank"><img class="resources__logo_size" src="./images/resources-polka.svg" alt="Светлый логотип ПОЛКА"></a>
+          </div>
+
+        </div>
+
+      </section>
+
     </main>
+
+
+    <!--________________________________________
+
+          Блок footer - Подвал html страницы
+        ________________________________________-->
 
     <!-- Подвал сайта блок footer (небольшой объем работы) 02.03.2021 -->
     <footer class="footer">
@@ -229,7 +438,7 @@
             <img src="./images/logo_place_footer.svg" alt = "Логотип: Яндекс Практикум в темных тонах">
           </a>
           <!-- Блок с копирайтом, годом, именем и фамилией автора -->
-          <p class="footer__author">&#169; 2021. Александр Мясоед</p>
+          <p class="footer__author">&#169; 2021. <a class="footer__column-links" href="https://myasoedas.ru/" target="_blank">Александр Мясоед</a></p>
         </div>
 
         <div class="footer__column footer__column_content_info">
