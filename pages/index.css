@@ -160,23 +160,23 @@
 
   @import url(../blocks/khan/khan__container/khan__container.css); /*флекс контейнер khan__container для блоков*/
 
-  @import url(../blocks/khan/__author/khan__author.css);
+  @import url(../blocks/khan/__author/khan__author.css); /*Блок с ФИО автора книги*/
 
-  @import url(../blocks/khan/__title/khan__title.css);
+  @import url(../blocks/khan/__title/khan__title.css); /*Заголовок блока*/
 
-  @import url(../blocks/khan/__quote/khan__quote.css);
+  @import url(../blocks/khan/__quote/khan__quote.css); /*Описание блока*/
 
-  @import url(../blocks/khan/__quote-author/khan__quote-author.css);
+  @import url(../blocks/khan/__quote-author/khan__quote-author.css); /*Автор описания ФИО*/
 
-  @import url(../blocks/khan/__quote-author-subline/khan__quote-author-subline.css);
+  @import url(../blocks/khan/__quote-author-subline/khan__quote-author-subline.css); /*специализация и вид деятельности автора описания*/
 
-  @import url(../blocks/khan/__book-container/khan__book-container.css);
+  @import url(../blocks/khan/__book-container/khan__book-container.css); /*горизонтальный флекс контейнер для изображения книги и ссылки Купить книгу*/
 
-  @import url(../blocks/khan/__book-pic/khan__book-pic.css);
+  @import url(../blocks/khan/__book-pic/khan__book-pic.css); /*блок для размещения изображения книги*/
 
-  @import url(../blocks/khan/__book-pic/_size/khan__book-pic_size.css);
+  @import url(../blocks/khan/__book-pic/_size/khan__book-pic_size.css); /*указать ширину изображения, чтобы висать его по ширине в блок*/
 
-  @import url(../blocks/khan/__buy-link/khan__buy-link.css);
+  @import url(../blocks/khan/__buy-link/khan__buy-link.css); /*параметры для ссылки Купить книгу*/
 
 
 
