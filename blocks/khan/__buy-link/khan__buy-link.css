@@ -1,0 +1,18 @@
+
+.khan__buy-link {
+  margin: 0;
+  padding: 0;
+  line-height: 42px; /*Высота строки*/
+  font-size: 30px; /*Размер шрифта*/
+  font-weight: normal; /*Начертание шрифта нормальное*/
+  text-align: left; /*выравнивание текста по по левому краю*/
+  text-decoration: none; /*убрал нижнее подчеркивание у ссылки*/
+  color: #2f80ed; /*цвет текста - синий*/
+  opacity: 1; /*непрозрачность блока = 1*/
+  transition: opacity 0.8s linear 0.1s; /*Плавное изменение свойства: property duration timing-function delay*/
+
+}
+
+.khan__buy-link:hover {
+  opacity: 0.4; /*непрозрачность блока при наведении мышки*/
+}

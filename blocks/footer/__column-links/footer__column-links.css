@@ -1,0 +1,18 @@
+/*Блок для вертикального выстраивания ссылок в колонке*/
+.footer__column-links {
+  margin: 0;
+  padding: 0;
+  line-height: 30px; /*Высота строки*/
+  font-size: 18px; /*Размер шрифта*/
+  font-weight: normal; /*Начертание шрифта нормальное*/
+  text-align: left; /*выравнивание текста по правому краю*/
+  text-decoration: none; /*убрал нижнее подчеркивание у ссылки*/
+  color: #fff; /*цвет текста - белый*/
+  opacity: 1; /*непрозрачность блока header__link = 1*/
+  transition: opacity 0.8s linear 0.1s; /*Плавное изменение свойства: property duration timing-function delay*/
+
+}
+
+.footer__column-links:hover {
+  opacity: 0.4; /*непрозрачность блока header__link при наведении мышки*/
+}

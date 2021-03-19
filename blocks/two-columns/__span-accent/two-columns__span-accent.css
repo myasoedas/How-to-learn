@@ -1,0 +1,9 @@
+/*Селектор выделенной фразы внутри параграфа*/
+.two-columns__span-accent {
+  margin: 0;
+  padding: 0;
+  line-height: 34px; /*Высота строки*/
+  font-size: 24px; /*Размер шрифта*/
+  font-weight: bold; /*Начертание шрифта нормальное*/
+  text-align: left; /*выравнивание текста по левому краю*/
+}

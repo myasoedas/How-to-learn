@@ -1,0 +1,9 @@
+
+.khan__quote-author-subline {
+  margin: 0;
+  padding: 0;
+  line-height: 1.15; /*Высота строки*/
+  font-size: 24px; /*Размер шрифта*/
+  font-weight: normal; /*Начертание шрифта нормальное*/
+  text-align: left; /*выравнивание текста по по левому краю*/
+}

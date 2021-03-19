@@ -1,0 +1,11 @@
+/*селектор карточки второй секции*/
+.table__cell {
+  margin: 0;
+  padding: 0;
+  display: flex; /*преобразую блок во флекс контейнер*/
+  flex-direction:column; /*задал направление внутри флекс контейнера в ряд сверху вниз*/
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 250px;
+  padding-top: 60px;
+}

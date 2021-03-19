@@ -1,0 +1,11 @@
+/*Селектор блока левой колонки с брифом*/
+.two-columns__brief {
+  margin: 0;
+  padding: 0;
+  width: 175px; /*ширина блока*/
+  line-height: 1.2; /*Высота строки*/
+  font-size: 18px; /*Размер шрифта*/
+  font-weight: normal; /*Начертание шрифта нормальное*/
+  text-align: left; /*выравнивание текста по левому краю*/
+  color: #2f80ed;
+}

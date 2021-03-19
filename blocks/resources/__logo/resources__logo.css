@@ -1,0 +1,15 @@
+/*Секция - блок "Полезные ресурсы"*/
+/*Блок с логотипом*/
+.resources__logo {
+  margin: 0; /*обнуляем внешние отсупы*/
+  padding: 0; /*обнуляем внутренние отступы*/
+  width: 270px; /*ширина блока*/
+  height: 38px; /*высота блока*/
+  text-align: center;
+  opacity: 1; /*непрозрачность блока = 1*/
+  transition: opacity 0.8s linear 0.1s; /*Плавное изменение свойства: property duration timing-function delay*/
+}
+
+.resources__logo:hover {
+  opacity: 0.4; /*непрозрачность блока при наведении мышки*/
+}

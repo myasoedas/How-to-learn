@@ -1,0 +1,20 @@
+/*Ссылка*/
+.feynman__link {
+  margin: 0;
+  padding: 0;
+  position: absolute; /*подключил абсолютное позиционирование, "вырвал" блок из потока*/
+  right: 48px; /*отсутп справа 48px*/
+  top: 50%; /*отступ сверху - 50% от высоты флекс контейнера*/
+  line-height: 51px; /*Высота строки*/
+  font-size: 36px; /*Размер шрифта*/
+  font-weight: normal; /*Начертание шрифта нормальное*/
+  text-align: right; /*выравнивание текста по правому краю*/
+  text-decoration: none; /*убрал нижнее подчеркивание у ссылки*/
+  color: #2f80ed; /*цвет ссылки - синий*/
+  opacity: 1; /*непрозрачность блока = 1*/
+  transition: opacity 0.8s linear 0.1s; /*Плавное изменение свойства: property duration timing-function delay*/
+}
+
+.feynman__link:hover {
+  opacity: 0.4; /*непрозрачность блока при наведении мышки*/
+}
