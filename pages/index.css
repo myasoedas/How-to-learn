@@ -34,6 +34,8 @@
 
 @import url(../blocks/rotation/rotation.css); /*подключил к index.css файл rotation.css с кейфремом, описывающим переход из исходного состояния в конечное: вращение от 0 до 360 градусов*/
 
+@import url(../blocks/rotation/_animation/rotation_animation.css); /*включить анимацию кейфрема rotation: равномерное бесконечное вращение с угловой скоростью 360 градусов за 20 секунд*/
+
 @import url(../blocks/logo/logo.css);
 /*Подключил к index.css файл logo.css. CSS параметры блока logo пернес в файл logo.css*/
 

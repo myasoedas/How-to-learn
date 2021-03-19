@@ -1,14 +1,13 @@
+/*Блок header "Научиться учиться"*/
 /*Блок - синий квадрат*/
 .header__square-pic {
-  margin: 0;
-  padding: 0;
+  margin: 0; /*обнулить внешние отступы*/
+  padding: 0; /*обнулить внуренние отступы*/
   width: 568px; /*Ширина блока*/
   height: 568px; /*Высота блока*/
   background-color: #2f80ed; /*установил синий цвет фона для блока*/
   position: absolute; /*Установил для бока абсолютное позиционирование относительно родительского блока header*/
   right: 0px; /*отступ слева от header*/
   top: 64px; /*отступ снизу от header*/
-  animation: rotation 20s linear infinite; /*включить анимацию кейфрема rotation*/
   z-index: 1; /*Блок должен быть ниже logo, title, subtitle, main-illustration*/
-
 }
