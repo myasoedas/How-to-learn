@@ -1,10 +1,9 @@
 
 .khan__book-container {
-  margin: 0; /*обнулил внешние отступы*/
+  margin: 68px 0 0 0; /*внешний отступ: top right bottom left*/
   padding: 0; /*обнулили внутренние отступы*/
   display: flex; /*преобразовать блок во флекс контейнер*/
   flex-direction: row; /*блоки размещаются друг за другом слева направо*/
   justify-content: flex-start; /*прижать строку с блоками к верхнему краю*/
   align-items: flex-start; /*прижать строку с блоками к левому краю*/
-  margin: 68px 0 0 0; /*внешний отступ: top right bottom left*/
 }

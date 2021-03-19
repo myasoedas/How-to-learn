@@ -1,7 +1,7 @@
 /*Селектор ссылки в подзаголовке блока header*/
 .header__link {
-  margin: 0;
-  padding: 0;
+  margin: 0; /*обнулить внешние отступы*/
+  padding: 0; /*обнулить внутрение отступы*/
   line-height: 25px; /*Высота строки*/
   font-size: 18px; /*Размер шрифта*/
   font-weight: normal; /*Начертание шрифта нормальное*/
@@ -9,7 +9,7 @@
   color: #2f80ed; /*цвет текста - синий*/
   opacity: 1; /*непрозрачность блока header__link = 1*/
   transition: opacity 0.8s linear 0.1s; /*Плавное изменение свойства: property duration timing-function delay*/
-  
+
 }
 
 .header__link:hover {
