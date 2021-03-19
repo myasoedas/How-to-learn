@@ -7,4 +7,11 @@
   font-weight: normal; /*Начертание шрифта нормальное*/
   text-decoration: none; /*убрал нижнее подчеркивание у ссылки*/
   color: #2f80ed; /*цвет текста - синий*/
+  opacity: 1; /*непрозрачность блока header__link = 1*/
+  transition: opacity 0.8s linear 0.1s; /*Плавное изменение свойства: property duration timing-function delay*/
+  
+}
+
+.header__link:hover {
+  opacity: 0.4; /*непрозрачность блока header__link при наведении мышки*/
 }

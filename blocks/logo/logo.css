@@ -5,4 +5,11 @@
   width: 183px; /*Ширина блока logo*/
   height: 32px; /*Высота блока logo*/
   z-index: 4; /*Блок logo должен быть поверх всех блоков*/
+  opacity: 1; /*непрозрачность блока = 1*/
+  transition: opacity 0.8s linear 0.1s; /*Плавное изменение свойства: property duration timing-function delay*/
+
+}
+
+.logo:hover {
+  opacity: 0.4; /*непрозрачность блока header__link при наведении мышки*/
 }
