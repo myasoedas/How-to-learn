@@ -1,12 +1,4 @@
 /*Модификатор для подзаголовка блока kaufman*/
 .section-subtitle_theme_dark {
-  margin: 0;
-  padding: 20px 0 0 0; /*внутрений отступ сверху 20px*/
-  width: 60%; /*ширина 60% от ширины флекс контейнера kaufman*/
   color: #fff; /*цвет текста - белый*/
-  line-height: 34px; /*Высота строки*/
-  font-size: 24px; /*Размер шрифта*/
-  font-weight:normal; /*Начертание шрифта нормальное*/
-  text-align: center; /*выравнивание текста по центру*/
-  z-index: 2;
 }

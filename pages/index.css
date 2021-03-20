@@ -46,9 +46,6 @@
     Секция - блок "Главные проблемы в обучении"
   _________________________________________________________________________________________________*/
 
-  @import url(../blocks/content/content.css);
-  /*Подключил к index.css файл content.css. CSS параметры блока content пернес в файл content.css*/
-
   @import url(../blocks/description/description.css);
   /*Подключил к index.css файл description.css. CSS параметры блока description пернес в файл description.css*/
 
