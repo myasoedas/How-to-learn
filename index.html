@@ -18,7 +18,6 @@
 <body class="root">
   <div class="page">
 
-
     <!--________________________________________
 
         Блок - Шапка html страницы
@@ -54,7 +53,6 @@
     <!-- Блок основного контена -->
     <main class="content">
 
-
       <!--___________________________________________
 
           Секция - блок "Главные проблемы в обучении"
@@ -62,7 +60,8 @@
 
       <!-- Секция блок description (средний объем работы) 01.03.2021 -->
       <section class="description">
-        <div class="two-columns">
+
+        <div class="two-columns"> <!-- тег article в этом месте вызывает замечания от валидатора разметки, поэтому не стал его использовать. -->
 
           <!-- Бриф -->
           <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
@@ -89,7 +88,9 @@
             </p>
 
           </div>
+
         </div>
+
       </section>
 
 
@@ -220,7 +221,7 @@
         <h2 class="feynman__title">Метод Феинмана</h2>
 
         <!--Подзаголовок-->
-        <h3 class="feynman__subtitle">Выучить и не забыть.</h3>
+        <p class="feynman__subtitle">Выучить и не забыть.</p> <!-- Для подзаголовоков хорошей практикой считается использовать тег: p -->
 
         <!--Ссылка-->
         <a href="https://lifehacker.ru/metod-fejnmana/" class="feynman__link" target="_blank">Подробнее &rarr;</a>
@@ -286,11 +287,13 @@
           _____________________________________________-->
 
       <section class="khan">
+
         <div class="khan__container">
 
-          <h2 class="khan__author">Салман Хан</h2>
+          <h3 class="khan__author">Салман Хан</h3>
+          <!-- Поменял уровни заголовков местами. Название книги - это заголовок уровнем выше чем ФИО автора. -->
 
-          <h3 class="khan__title">Весь мир — школа</h3>
+          <h2 class="khan__title">Весь мир — школа</h2>
 
           <p class="khan__quote">
             Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем,
@@ -458,7 +461,7 @@
           <h2 class="footer__column-heading">О практикуме</h2>
 
           <!-- Блок с тремя ссылкамии -->
-          <nav>
+          <nav> <!-- добавил тег nav чтобы показать браузеру, что это блок навигации -->
             <ul class="footer__ul">
               <li>
                 <a href="https://praktikum.yandex.ru/web/" class="footer__column-links" target="_blank">Главная</a>
@@ -479,26 +482,28 @@
           <h2 class="footer__column-heading">Соцсети</h2>
 
           <!-- Блок со ссылкамии на соцсети-->
-          <ul class="footer__ul">
-            <li>
-              <a href="https://www.facebook.com/yandex.praktikum/" class="footer__column-links" target="_blank">
-                <img src="./images/facebook_color_white.svg" class="footer__social-icon" alt="Иконка Facebook">
-                Facebook
-              </a>
-            </li>
-            <li>
-              <a href="https://vk.com/yandex.praktikum" class="footer__column-links" target="_blank">
-                <img src="./images/vk_color_white.svg" class="footer__social-icon" alt="Иконка Вконтакте">
-                ВКонтакте
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/yndx.praktikum/" class="footer__column-links" target="_blank">
-                <img src="./images/instagram_color_white.svg" class="footer__social-icon" alt="Иконка Instagram">
-                Instagram
-              </a>
-            </li>
-          </ul>
+          <nav> <!-- добавил тег nav чтобы показать браузеру, что это блок навигации -->
+            <ul class="footer__ul">
+              <li>
+                <a href="https://www.facebook.com/yandex.praktikum/" class="footer__column-links" target="_blank">
+                  <img src="./images/facebook_color_white.svg" class="footer__social-icon" alt="Иконка Facebook">
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a href="https://vk.com/yandex.praktikum" class="footer__column-links" target="_blank">
+                  <img src="./images/vk_color_white.svg" class="footer__social-icon" alt="Иконка Вконтакте">
+                  ВКонтакте
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/yndx.praktikum/" class="footer__column-links" target="_blank">
+                  <img src="./images/instagram_color_white.svg" class="footer__social-icon" alt="Иконка Instagram">
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </nav>
 
         </div>
       </div>
