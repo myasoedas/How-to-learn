@@ -12,4 +12,4 @@
 
 #### Спринт № 2, начало работы над проектом: 16.03.2021
 
-* [Ссылка на проект, в моем портфолио](https://alexproit.ru/portfolio/how-to-learn/)
+* [Ссылка на web страницу с готовой работой](https://alexproit.ru/portfolio/how-to-learn/)
